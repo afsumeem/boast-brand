@@ -14,7 +14,7 @@ const BrandHero = () => {
             alt="logo"
             className=""
           />
-          <div className="flex items-center justify-around mt-10">
+          <div className="flex items-center justify-around mt-20">
             <div className="w-full lg:w-1/2">
               <img
                 src="/hero/5_n47fz6.png"
