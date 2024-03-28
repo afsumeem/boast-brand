@@ -1,70 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
-
+import { MdArrowOutward } from "react-icons/md";
 const ContactUs = () => {
   return (
-    <div class="angry-grid">
-      <div id="item-0">
-        <img
-          src="https://images.unsplash.com/photo-1587750059642-d55dfc265acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt=""
-        />
+    <>
+      <div className="h-[600px] flex flex-col items-center justify-center">
+        <h2
+          className="text-5xl text-white text-center"
+          style={{
+            fontFamily: "Raleway",
+            fontWeight: "800",
+          }}
+        >
+          WANT YOUR BRAND AND <br /> PRODUCT FEATURED LIKE THIS?
+        </h2>
+
+        <button className="mt-10  get-calculator border-2 py-2 px-4 flex items-center gap-2 text-white text-xl duration-300">
+          Contact Us <MdArrowOutward />
+        </button>
       </div>
-      <div id="item-1">
-        <img
-          src="https://images.unsplash.com/photo-1587750059642-d55dfc265acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt=""
-        />
-      </div>
-      <div id="item-2">
-        {" "}
-        <img
-          src="https://images.unsplash.com/photo-1587750059642-d55dfc265acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt=""
-        />
-      </div>
-      <div id="item-3">
-        {" "}
-        <img
-          src="https://images.unsplash.com/photo-1587750059642-d55dfc265acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt=""
-        />
-      </div>
-      <div id="item-4">
-        {" "}
-        <img
-          src="https://images.unsplash.com/photo-1587750059642-d55dfc265acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt=""
-        />
-      </div>
-      <div id="item-5">
-        {" "}
-        <img
-          src="https://images.unsplash.com/photo-1587750059642-d55dfc265acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt=""
-        />
-      </div>
-      <div id="item-6">
-        {" "}
-        <img
-          src="https://images.unsplash.com/photo-1587750059642-d55dfc265acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt=""
-        />
-      </div>
-      <div id="item-7">
-        {" "}
-        <img
-          src="https://images.unsplash.com/photo-1587750059642-d55dfc265acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt=""
-        />
-      </div>
-      <div id="item-8">
-        {" "}
-        <img
-          src="https://images.unsplash.com/photo-1587750059642-d55dfc265acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt=""
-        />
-      </div>
-    </div>
+      <div className="mx-2 lg:mx-24 border-t-1 border-gray-600"></div>
+    </>
   );
 };
 

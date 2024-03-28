@@ -40,7 +40,7 @@ const BrandPage = () => {
         <div className="wave"></div>
       </div>
 
-      {/* <ContactUs /> */}
+      <ContactUs />
     </div>
   );
 };

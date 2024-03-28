@@ -38,7 +38,6 @@ const BrandHero = () => {
         <div className="wave"></div>
         <div className="wave"></div>
       </div>
-      {/* <div className="half-circle"></div> */}
     </>
   );
 };
