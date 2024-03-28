@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { FaDollarSign } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 
 const Calculator = () => {
   const [value, setValue] = useState(30);
@@ -15,9 +17,9 @@ const Calculator = () => {
 
   //
   return (
-    <div className="bg-[#10141d] text-white text-center mx-2 lg:mx-24 mb-20">
+    <div className=" text-white text-center mx-2 lg:mx-24 mb-20">
       <h2
-        className="text-5xl bg-[#10141d]"
+        className="text-5xl "
         style={{
           fontFamily: "Raleway",
           fontWeight: "800",
@@ -26,7 +28,7 @@ const Calculator = () => {
         EARN FIRST, PAY LATER!
       </h2>
       <h5
-        className="text-3xl mt-6 bg-[#10141d]"
+        className="text-3xl mt-6 "
         style={{
           fontFamily: "Raleway",
           fontWeight: "800",
@@ -35,18 +37,18 @@ const Calculator = () => {
         CASHBACK VS REACH CALCULATOR
       </h5>
       <button
-        className="mt-10 get-calculator border-2 py-2 px-3"
+        className="mt-10  get-calculator border-2 py-2 px-3 fixed left-0 top-28 flex items-center gap-2"
         onClick={toggleCalculator}
       >
-        {showCalculator ? "Close Calculator" : "Get Calculator"}
+        Calculator {showCalculator ? <FaArrowLeft /> : <FaArrowRight />}
       </button>
 
       <div
-        className={`calculator-container ${
+        className={`calculator-container fixed left-0 top-52 ${
           showCalculator ? "fade-in" : "fade-out"
         }`}
       >
-        <div className="w-[500px] mx-auto calculator mt-10 p-5 z-0">
+        <div className="w-[500px] calculator  p-5 z-0">
           <div className="flex w-full gap-2 justify-center items-center ">
             <div className="range w-full">
               <input
@@ -69,17 +71,21 @@ const Calculator = () => {
           <div className="px-5 my-3">
             <h3 className="flex justify-between text-xl">
               Estimated Reach{" "}
-              <span className="text-2xl">{value * 8}K &#129321;</span>
+              <span className="text-2xl">
+                {value}K - {value * 5}K &#129321;
+              </span>
             </h3>
             <h3 className="flex justify-between text-xl my-2">
               Upfront Sales
               <span className="flex items-center text-2xl">
                 <FaDollarSign />
-                {value * 3}K &#128176;
+                {parseFloat(value * 0.05).toFixed(2)}K -{" "}
+                {parseFloat(value * 0.1).toFixed(1)}K &#128176;
               </span>
             </h3>
             <h3 className="flex justify-between text-xl">
-              Shout Outs <span className="text-2xl">{value * 2} 📢</span>
+              Shout Outs{" "}
+              <span className="text-2xl">{parseInt(value * 1.5)} 📢</span>
             </h3>
           </div>
         </div>

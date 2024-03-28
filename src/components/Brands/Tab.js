@@ -21,7 +21,15 @@ const Tab = ({ goToTop }) => {
           >
             <FaInstagram className="text-lg" />
           </a>
-          <p className="text-[#FC0F67]">About Us</p>
+
+          <a
+            href="/https://www.getboast.co/"
+            className="text-[#FC0F67]"
+            target="blank"
+          >
+            INFLUENCERS
+          </a>
+          <p className="text-[#FC0F67] uppercase">About Us</p>
           <button onClick={goToTop} className="text-[#FC0F67]">
             SCROLL UP
           </button>

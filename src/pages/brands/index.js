@@ -32,8 +32,14 @@ const BrandPage = () => {
       <Tab goToTop={goToTop} />
       <HowItWorks />
       <Dashboard />
-      <Calculator />
-      <TopBrands />
+      <div className="calc-section py-20">
+        <Calculator />
+        <TopBrands />
+        <div className="wave"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
+      </div>
+
       {/* <ContactUs /> */}
     </div>
   );

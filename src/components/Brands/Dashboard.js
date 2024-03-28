@@ -28,7 +28,7 @@ const Dashboard = () => {
         >
           5x more conversions
         </h2>
-        <p>than the industry average</p>
+        <p>Than the industry average</p>
       </div>
       <div className="bg-[#0d1118] text-white   px-10 py-20 rounded-br-[60px] dashboard3">
         <h2
@@ -38,9 +38,9 @@ const Dashboard = () => {
             fontWeight: "800",
           }}
         >
-          270k+ businesses
+          1 tap <br /> campaign
         </h2>
-        <p>Launched on Boast</p>
+        <p>Our app lets you start a campaign with just a tap</p>
       </div>
     </div>
   );

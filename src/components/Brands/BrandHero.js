@@ -12,7 +12,7 @@ const BrandHero = () => {
             width={100}
             height={0}
             alt="logo"
-            className=""
+            className="pt-5"
           />
           <div className="flex items-center justify-around mt-20">
             <div className="w-full lg:w-1/2">
