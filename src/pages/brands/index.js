@@ -34,7 +34,7 @@ const BrandPage = () => {
       <Dashboard />
       <Calculator />
       <TopBrands />
-      <ContactUs />
+      {/* <ContactUs /> */}
     </div>
   );
 };
