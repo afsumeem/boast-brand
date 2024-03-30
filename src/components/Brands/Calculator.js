@@ -29,13 +29,14 @@ const Calculator = () => {
         EARN FIRST, PAY LATER!
       </h2>
       <h5
-        className="text-3xl mt-6 "
+        className="text-xl mt-6 "
         style={{
           fontFamily: "Raleway",
           fontWeight: "800",
         }}
       >
-        CASHBACK VS REACH CALCULATOR
+        With boast, seize $50 credit <br /> and embark on a 10-day trial to
+        unlock your potential!
       </h5>
       <button
         className="mt-10  get-calculator border-2 py-2 px-3 fixed -left-10 top-56 flex items-center gap-2 -rotate-90"
@@ -45,7 +46,7 @@ const Calculator = () => {
       </button>
 
       <div
-        className={`calculator-container fixed left-0 top-72 ${
+        className={`calculator-container fixed left-0 top-[360px] ${
           showCalculator ? "fade-in" : "fade-out"
         }`}
       >

@@ -4,11 +4,12 @@ import {
   Modal,
   ModalContent,
   ModalBody,
-  ModalFooter,
   useDisclosure,
   Button,
   Image,
 } from "@nextui-org/react";
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 
 const ContactUs = () => {
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
@@ -41,51 +42,86 @@ const ContactUs = () => {
         </button>
       </div>
       <div className="mx-2 lg:mx-24 border-t-1 border-gray-600">
-        <div>
-          <Image
-            src="/images/brand.png"
-            width={100}
-            height={0}
-            alt="logo"
-            className="pt-5"
-          />
-          <div>
-            <ul>
-              <li>Investors</li>
-              <li>Brand</li>
-              <li>Work with us</li>
-              <li>FAQs</li>
-              <li>Blogs</li>
-            </ul>
+        <div className="flex flex-col lg:flex-row pt-7 pb-2 justify-between gap-10">
+          <div className="flex flex-col w-full lg:w-3/6 ">
+            <div className="flex gap-3 mx-5 lg:mx-0">
+              <Image
+                src={"/images/brand.png"}
+                width={100}
+                height={0}
+                alt="Logo"
+              />
+            </div>
+            <div className="flex flex-col mt-5 mb-0 text-white mx-7 lg:mx-0">
+              <p className="text-justify text-sm text-gray-200">
+                Boast provides end-to-end UGC marketing for businesses using
+                their own customers by implementing a cashback model. Brands top
+                up marketing funds, enabling us to offer cashbacks ranging from
+                10% to 100% to our members. When customers make purchases and
+                share on social media, they receive cashback rewards.
+              </p>
+            </div>
+            <div className="flex mt-2 gap-3 mx-7 lg:mx-0">
+              <a
+                href="https://web.facebook.com/boastbrand/"
+                target="blank"
+                className="text-[#FC0F67] bg-black p-3 rounded-lg "
+              >
+                <FaFacebook className="text-lg" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/getboastofficial/"
+                target="blank"
+                className="text-[#FC0F67] bg-black p-3 rounded-lg"
+              >
+                <FaInstagram className="text-lg" />
+              </a>
+            </div>
+          </div>
+          {/* 2nd section */}
+          <div className="mx-7 lg:mx-0">
+            <div className=" text-gray-100">
+              <h4 className=" text-xl font-extrabold mb-2">Office</h4>
+              <p className=" text-sm text-gray-300">
+                136, Kalachadpur, North Baridhara, Dhaka 1206, Bangladesh
+              </p>
+              <h4 className=" text-xl font-extrabold mt-3 mb-2">Contacts</h4>
+              <p className=" text-sm text-gray-300">
+                +8801614395930 ridwan@xrougex.com
+              </p>
+            </div>
           </div>
         </div>
-        <div></div>
+
+        <div className="w-full mb-5 flex flex-col items-center text-white font-normal">
+          <p>© 2024 BOAST. All rights reserved.</p>
+        </div>
       </div>
 
       <Modal
         backdrop="blur"
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        className="max-w-full h-full join-wishlist py-2  mt-8  overflow-scroll overflow-x-hidden"
+        className=" contact-us-form py-2  mt-8 overflow-x-hidden"
       >
         <ModalContent>
           {(onClose) => (
             <>
               <ModalBody className=" flex flex-col items-center justify-center">
-                <form>
+                <form className="mt-3">
                   <label
                     htmlFor="name"
                     style={{
                       fontFamily: "Raleway",
                       fontWeight: "400",
                     }}
-                    className="text-white"
+                    className="text-gray-200 text-sm ml-1 "
                   >
                     Name
                   </label>
                   <input
-                    // variant="bordered"
-                    className="bg-inherit rounded-none hover:border-white border border-white py-2 w-full focus:outline-none px-3 mb-2 text-white"
+                    className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm mb-2 text-gray-200"
                     style={{
                       fontFamily: "Raleway",
                       fontWeight: "400",
@@ -97,28 +133,27 @@ const ContactUs = () => {
                     // value={formData.name}
                     // onChange={handleInputChange}
                   />
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
                     <div>
                       <label
-                        htmlFor="instagramId"
-                        className="text-white"
+                        htmlFor="brandname"
+                        className="text-gray-200 text-sm ml-1"
                         style={{
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
                       >
-                        Instagram ID
+                        Brand Name
                       </label>
                       <input
-                        // variant="underlined"
-                        className="bg-inherit rounded-none hover:border-white border border-white py-2 w-full focus:outline-none px-3 text-white"
+                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
                         style={{
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
                         type="text"
-                        label="Instagram ID"
-                        name="instagramId"
+                        label="Brand Name"
+                        name="brandname"
                         // value={formData.instagramId}
                         // onChange={handleInputChange}
                       />
@@ -129,50 +164,50 @@ const ContactUs = () => {
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
-                        htmlFor="otherSocialMediaId"
-                        className="text-white"
+                        htmlFor="Email"
+                        className="text-gray-200 text-sm ml-1"
                       >
-                        Other Social Media ID
+                        Email
                       </label>
 
                       <input
-                        className="bg-inherit rounded-none hover:border-white border border-white py-2 w-full focus:outline-none px-3 text-white"
+                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
                         style={{
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
-                        type="text"
-                        label="Other Social Media ID"
-                        name="otherSocialMediaId"
-                        id="otherSocialMediaId"
+                        type="email"
+                        label="Email"
+                        name="email"
+                        id="email"
                         // value={formData.otherSocialMediaId}
                         // onChange={handleInputChange}
                       />
                     </div>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
                     <div>
                       <label
-                        htmlFor="phoneNo"
+                        htmlFor="instaid"
                         style={{
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
-                        className="text-white"
+                        className="text-gray-200 text-sm ml-1"
                       >
-                        Phone No.
+                        Your Instagram Link
                       </label>
                       <input
-                        className="bg-inherit rounded-none hover:border-white border border-white py-2 w-full focus:outline-none px-3 text-white"
+                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
                         style={{
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
                         type="text"
-                        label="Phone No."
-                        name="phoneNo"
-                        id="phoneNo"
-                        // value={formData.phoneNo}
+                        label="Your Instagram Profile Link"
+                        name="instaid"
+                        id="instaid"
+                        // value={formData.instaid}
                         // onChange={handleInputChange}
                       />{" "}
                     </div>
@@ -182,54 +217,107 @@ const ContactUs = () => {
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
-                        htmlFor="email"
-                        className="text-white"
+                        htmlFor="website"
+                        className="text-gray-200 text-sm ml-1"
                       >
-                        Email
+                        Website
                       </label>
                       <input
-                        className="bg-inherit rounded-none hover:border-white border border-white py-2 w-full focus:outline-none px-3 text-white"
+                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
+                        type="text"
                         style={{
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
-                        type="email"
-                        id="email"
-                        label="Email"
-                        name="email"
-                        // value={email}
+                        name="website"
+                        id="website"
+                        // value={formData.website}
+                        // onChange={handleInputChange}
                       />
                     </div>
                   </div>
-
                   {/*  */}
                   <label
                     style={{
                       fontFamily: "Raleway",
                       fontWeight: "400",
                     }}
-                    htmlFor="Insta/FB/tiktok"
-                    className="text-white"
+                    htmlFor="designation"
+                    className="text-gray-200 text-sm ml-1"
                   >
-                    Number of followers on Insta/FB/tiktok
+                    Designation
                   </label>
                   <input
-                    className="bg-inherit rounded-none hover:border-white border border-white py-2 w-full focus:outline-none px-3 text-white"
-                    type="text"
-                    // placeholder="Number of followers on Insta/FB/tiktok"
+                    className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm mb-2 text-gray-200"
                     style={{
                       fontFamily: "Raleway",
                       fontWeight: "400",
                     }}
-                    name="followers"
-                    id="Insta/FB/tiktok"
-                    // value={formData.followers}
-                    // onChange={handleInputChange}
+                    type="text"
+                    id="designation"
+                    label="Designation"
+                    name="designation"
+                    // value={designation}
                   />
+
+                  {/*  */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
+                    <div>
+                      <label
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        htmlFor="phone"
+                        className="text-gray-200 text-sm ml-1"
+                      >
+                        Phone Number
+                      </label>
+                      <input
+                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm mb-2 text-gray-200"
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        type="text"
+                        id="phone"
+                        label=" Phone Number"
+                        name="phone"
+                        // value={phone}
+                      />
+                    </div>
+                    <div>
+                      <label
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        htmlFor="city"
+                        className="text-gray-200 text-sm ml-1"
+                      >
+                        City
+                      </label>
+                      <input
+                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm mb-2 text-gray-200"
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        type="text"
+                        id="city"
+                        label="City"
+                        name="city"
+                        // value={city}
+                      />
+                    </div>
+                  </div>
+
+                  {/*  */}
+
                   <div className=" w-full flex justify-center items-center mt-5 gap-2 pb-2">
                     <button
                       type="submit"
-                      className="bg-black hover:bg-[#fd7f3e] text-white px-6 py-2 rounded-full hover:text-black duration-300 "
+                      className="bg-black hover:bg-[#FC0F67] text-white px-6 py-2 rounded-full hover:text-black duration-300 "
                     >
                       Submit
                     </button>
@@ -237,7 +325,7 @@ const ContactUs = () => {
                       // color="danger"
                       variant="light"
                       onClick={handleClose}
-                      className="rounded-full border border-black text-white hover:text-black"
+                      className="rounded-full border border-black text-white"
                     >
                       Cancel
                     </Button>

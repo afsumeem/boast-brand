@@ -27,12 +27,12 @@ const BrandPage = () => {
     });
   };
   return (
-    <div className="bg-[#10141d] pb-32">
+    <div className="bg-[#10141d] pb-20">
       <BrandHero />
       <Tab goToTop={goToTop} />
       <HowItWorks />
       <Dashboard />
-      <div className="calc-section py-20">
+      <div className="calc-section pt-28 pb-16">
         <Calculator />
         <TopBrands />
         <div className="wave"></div>

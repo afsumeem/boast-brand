@@ -310,6 +310,15 @@ input[type="range"]::-moz-range-thumb {
   border: 2px solid transparent;
 }
 
+.contact-us-form {
+  background: #10141dd7;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid #fc0f664f;
+}
+
 /*  */
 
 @media only screen and (min-width: 321px) and (max-width: 375px) {
