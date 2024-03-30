@@ -10,6 +10,8 @@ const HowItWorks = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
   return (
     <div className="bg-[#10141d] h-[500px] mt-10 md:mt-0 mb-10 mx-2 lg:mx-24 flex flex-col md:flex-row justify-around gap-5 items-center">
@@ -34,9 +36,9 @@ const HowItWorks = () => {
         </p>
       </div>
       <div className="w-full md:w-1/2 text-white">
-        <div className="slider-container">
+        <div className="slider-container ">
           <Slider {...settings}>
-            <div>
+            <div className="w-[90%]">
               <img src="/images/howit.png" alt="" />
               <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
                 <h3
@@ -53,7 +55,7 @@ const HowItWorks = () => {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="w-[90%]">
               <img src="/images/howit.png" alt="" />
               <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
                 <h3
@@ -70,7 +72,7 @@ const HowItWorks = () => {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="w-[90%]">
               <img src="/images/howit.png" alt="" />
               <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
                 <h3
@@ -87,7 +89,7 @@ const HowItWorks = () => {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="w-[90%]">
               <img src="/images/howit.png" alt="" />
               <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
                 <h3
@@ -112,3 +114,25 @@ const HowItWorks = () => {
 };
 
 export default HowItWorks;
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    />
+  );
+}

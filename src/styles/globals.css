@@ -308,6 +308,11 @@ input[type="range"]::-moz-range-thumb {
     linear-gradient(to right, #920338, #5a5105) border-box;
   border-radius: 50em;
   border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.contact-us-btn:hover {
+  background: linear-gradient(#920338, #920338) padding-box;
 }
 
 .contact-us-form {
@@ -319,6 +324,15 @@ input[type="range"]::-moz-range-thumb {
   border: 1px solid #fc0f664f;
 }
 
+/*  */
+.slick-prev:before {
+  font-size: 25px !important;
+  color: #fc0f67 !important;
+}
+.slick-next::before {
+  font-size: 25px !important;
+  color: #fc0f67 !important;
+}
 /*  */
 
 @media only screen and (min-width: 321px) and (max-width: 375px) {

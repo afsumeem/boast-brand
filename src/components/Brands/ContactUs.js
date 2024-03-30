@@ -53,7 +53,7 @@ const ContactUs = () => {
               />
             </div>
             <div className="flex flex-col mt-5 mb-0 text-white mx-7 lg:mx-0">
-              <p className="text-justify text-sm text-gray-200">
+              <p className="text-justify text-sm 2xl:text-2xl text-gray-200">
                 Boast provides end-to-end UGC marketing for businesses using
                 their own customers by implementing a cashback model. Brands top
                 up marketing funds, enabling us to offer cashbacks ranging from
@@ -65,17 +65,17 @@ const ContactUs = () => {
               <a
                 href="https://web.facebook.com/boastbrand/"
                 target="blank"
-                className="text-[#FC0F67] bg-black p-3 rounded-lg "
+                className="text-[#FC0F67] bg-black p-3 rounded-lg duration-300 hover:text-[#FAE411] cursor-pointer"
               >
-                <FaFacebook className="text-lg" />
+                <FaFacebook className="text-lg cursor-pointer" />
               </a>
 
               <a
                 href="https://www.instagram.com/getboastofficial/"
                 target="blank"
-                className="text-[#FC0F67] bg-black p-3 rounded-lg"
+                className="text-[#FC0F67] bg-black p-3 rounded-lg duration-300 hover:text-[#FAE411] cursor-pointer"
               >
-                <FaInstagram className="text-lg" />
+                <FaInstagram className="text-lg cursor-pointer" />
               </a>
             </div>
           </div>

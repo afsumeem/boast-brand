@@ -11,27 +11,32 @@ const Tab = ({ goToTop }) => {
           <a
             href="https://web.facebook.com/boastbrand/"
             target="blank"
-            className="text-[#FC0F67] p-3 rounded-lg "
+            className="text-[#FC0F67] p-3 rounded-lg duration-300 hover:text-[#FAE411]"
           >
             <FaFacebook className="text-lg" />
           </a>
           <a
             href="https://www.instagram.com/getboastofficial/"
             target="blank"
-            className="text-[#FC0F67] p-3 rounded-lg"
+            className="text-[#FC0F67] p-3 rounded-lg duration-300 hover:text-[#FAE411]"
           >
             <FaInstagram className="text-lg" />
           </a>
 
           <a
             href="https://www.getboast.co/"
-            className="text-[#FC0F67]"
+            className="text-[#FC0F67] duration-300 hover:text-[#FAE411]"
             target="blank"
           >
             INFLUENCERS
           </a>
-          <p className="text-[#FC0F67] uppercase">About Us</p>
-          <button onClick={goToTop} className="text-[#FC0F67]">
+          <p className="text-[#FC0F67] duration-300 hover:text-[#FAE411] uppercase">
+            About Us
+          </p>
+          <button
+            onClick={goToTop}
+            className="text-[#FC0F67] duration-300 hover:text-[#FAE411]"
+          >
             <FaArrowUpLong />
           </button>
         </div>
