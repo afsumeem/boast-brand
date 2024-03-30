@@ -4,6 +4,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowUpLong } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
+
 const Calculator = () => {
   const [value, setValue] = useState(30);
   const [showCalculator, setShowCalculator] = useState(false);
@@ -46,11 +48,19 @@ const Calculator = () => {
       </button>
 
       <div
-        className={`calculator-container fixed left-0 top-[360px] ${
+        className={`calculator-container fixed left-0 top-[360px] z-50 ${
           showCalculator ? "fade-in" : "fade-out"
         }`}
       >
-        <div className="w-[500px] 2xl:w-[700px] calculator  p-5 2xl:py-10 z-0">
+        <div className="w-[500px] calculator p-5  z-0">
+          <div className="flex justify-end">
+            <button
+              className="p-1 border border-[#FC0F67] rounded-full hover:bg-[#FC0F67] text-[#FC0F67] hover:text-white duration-300"
+              onClick={toggleCalculator}
+            >
+              <IoClose />
+            </button>
+          </div>
           <h5 className="text-xl 2xl:text-3xl mb-2">
             CASHBACK VS REACH CALCULATOR
           </h5>

@@ -190,7 +190,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
-                    <div>
+                    {/* <div>
                       <label
                         htmlFor="instaid"
                         style={{
@@ -214,7 +214,7 @@ const ContactUs = () => {
                         // value={formData.instaid}
                         // onChange={handleInputChange}
                       />{" "}
-                    </div>
+                    </div> */}
                     <div>
                       <label
                         style={{

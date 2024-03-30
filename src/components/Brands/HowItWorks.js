@@ -14,7 +14,7 @@ const HowItWorks = () => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="bg-[#10141d] h-[500px] mt-10 md:mt-0 mb-10 mx-2 lg:mx-24 flex flex-col md:flex-row justify-around gap-5 items-center">
+    <div className="bg-[#10141d] h-[500px] mt-10 md:mt-0 mb-10 mx-2 lg:mx-24 flex flex-col md:flex-row justify-around gap-5 items-center z-0">
       <div>
         <h2
           className="text-5xl font-extrabold text-white"
@@ -35,7 +35,7 @@ const HowItWorks = () => {
           Boast turns your customers, <br /> into your brand marketeers
         </p>
       </div>
-      <div className="w-full md:w-1/2 text-white">
+      <div className="w-full md:w-1/2 text-white z-0 bg-[#10141d] ">
         <div className="slider-container ">
           <Slider {...settings}>
             <div className="w-[90%]">
