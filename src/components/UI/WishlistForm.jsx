@@ -155,7 +155,7 @@ const WishlistForm = () => {
             backdrop="blur"
             isOpen={isOpen}
             onOpenChange={onOpenChange}
-            className="max-w-full h-full join-wishlist py-2  mt-8  overflow-scroll overflow-x-hidden"
+            className=" join-wishlist py-2  mt-8  overflow-scroll overflow-x-hidden"
           >
             <ModalContent>
               {(onClose) => (

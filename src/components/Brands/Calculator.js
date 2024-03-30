@@ -2,7 +2,8 @@ import { useState } from "react";
 import { FaDollarSign } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
-
+import { FaArrowUpLong } from "react-icons/fa6";
+import { FaArrowDown } from "react-icons/fa6";
 const Calculator = () => {
   const [value, setValue] = useState(30);
   const [showCalculator, setShowCalculator] = useState(false);
@@ -37,14 +38,14 @@ const Calculator = () => {
         CASHBACK VS REACH CALCULATOR
       </h5>
       <button
-        className="mt-10  get-calculator border-2 py-2 px-3 fixed left-0 top-28 flex items-center gap-2"
+        className="mt-10  get-calculator border-2 py-2 px-3 fixed -left-10 top-56 flex items-center gap-2 -rotate-90"
         onClick={toggleCalculator}
       >
-        Calculator {showCalculator ? <FaArrowLeft /> : <FaArrowRight />}
+        Calculator {showCalculator ? <FaArrowUpLong /> : <FaArrowDown />}
       </button>
 
       <div
-        className={`calculator-container fixed left-0 top-52 ${
+        className={`calculator-container fixed left-0 top-72 ${
           showCalculator ? "fade-in" : "fade-out"
         }`}
       >

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 const Tab = ({ goToTop }) => {
   return (
@@ -31,7 +32,7 @@ const Tab = ({ goToTop }) => {
           </a>
           <p className="text-[#FC0F67] uppercase">About Us</p>
           <button onClick={goToTop} className="text-[#FC0F67]">
-            SCROLL UP
+            <FaArrowUpLong />
           </button>
         </div>
       </div>
