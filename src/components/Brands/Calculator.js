@@ -50,8 +50,10 @@ const Calculator = () => {
           showCalculator ? "fade-in" : "fade-out"
         }`}
       >
-        <div className="w-[500px] calculator  p-5 z-0">
-          <h5 className="text-xl mb-2">CASHBACK VS REACH CALCULATOR</h5>
+        <div className="w-[500px] 2xl:w-[700px] calculator  p-5 2xl:py-10 z-0">
+          <h5 className="text-xl 2xl:text-3xl mb-2">
+            CASHBACK VS REACH CALCULATOR
+          </h5>
           <div className="flex w-full gap-2 justify-center items-center ">
             <div className="range w-full">
               <input
@@ -63,22 +65,24 @@ const Calculator = () => {
                 className="w-full"
               />
             </div>
-            <h5 className="flex text-2xl mb-2 justify-center items-center text-[#FC0F67]">
+            <h5 className="flex text-2xl 2xl:text-3xl mb-2 justify-center items-center text-[#FC0F67]">
               <FaDollarSign />
-              <span className="text-2xl font-extrabold">{value}</span>
+              <span className="text-2xl 2xl:text-3xl font-extrabold">
+                {value}
+              </span>
             </h5>
           </div>
 
           {/*  */}
 
           <div className="px-5 my-2">
-            <h3 className="flex justify-between text-lg">
+            <h3 className="flex justify-between text-lg 2xl:text-xl">
               Estimated Reach{" "}
               <span className="text-xl">
                 {value}K - {value * 5}K &#129321;
               </span>
             </h3>
-            <h3 className="flex justify-between text-lg my-2">
+            <h3 className="flex justify-between text-lg my-2 2xl:text-xl">
               Upfront Sales
               <span className="flex items-center text-xl">
                 <FaDollarSign />
@@ -86,7 +90,7 @@ const Calculator = () => {
                 {parseFloat(value * 0.1).toFixed(1)}K &#128176;
               </span>
             </h3>
-            <h3 className="flex justify-between text-lg">
+            <h3 className="flex justify-between text-lg 2xl:text-xl">
               Shout Outs{" "}
               <span className="text-xl">{parseInt(value * 1.5)} 📢</span>
             </h3>

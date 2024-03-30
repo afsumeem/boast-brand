@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const TopBrands = () => {
   return (
-    <div className="py-7 flex px-7">
+    <div className="py-7 flex px-7 z-0">
       <div>
         <h2
           className="text-white text-3xl px-3 uppercase flex flex-col gap-2 "
