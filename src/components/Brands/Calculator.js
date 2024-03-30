@@ -51,6 +51,7 @@ const Calculator = () => {
         }`}
       >
         <div className="w-[500px] calculator  p-5 z-0">
+          <h5 className="text-xl mb-2">CASHBACK VS REACH CALCULATOR</h5>
           <div className="flex w-full gap-2 justify-center items-center ">
             <div className="range w-full">
               <input
@@ -70,24 +71,24 @@ const Calculator = () => {
 
           {/*  */}
 
-          <div className="px-5 my-3">
-            <h3 className="flex justify-between text-xl">
+          <div className="px-5 my-2">
+            <h3 className="flex justify-between text-lg">
               Estimated Reach{" "}
-              <span className="text-2xl">
+              <span className="text-xl">
                 {value}K - {value * 5}K &#129321;
               </span>
             </h3>
-            <h3 className="flex justify-between text-xl my-2">
+            <h3 className="flex justify-between text-lg my-2">
               Upfront Sales
-              <span className="flex items-center text-2xl">
+              <span className="flex items-center text-xl">
                 <FaDollarSign />
                 {parseFloat(value * 0.05).toFixed(2)}K -{" "}
                 {parseFloat(value * 0.1).toFixed(1)}K &#128176;
               </span>
             </h3>
-            <h3 className="flex justify-between text-xl">
+            <h3 className="flex justify-between text-lg">
               Shout Outs{" "}
-              <span className="text-2xl">{parseInt(value * 1.5)} 📢</span>
+              <span className="text-xl">{parseInt(value * 1.5)} 📢</span>
             </h3>
           </div>
         </div>

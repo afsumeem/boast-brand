@@ -24,7 +24,7 @@ const Tab = ({ goToTop }) => {
           </a>
 
           <a
-            href="/https://www.getboast.co/"
+            href="https://www.getboast.co/"
             className="text-[#FC0F67]"
             target="blank"
           >

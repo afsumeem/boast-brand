@@ -6,7 +6,7 @@ const TopBrands = () => {
     <div className="py-7 flex px-7">
       <div>
         <h2
-          className="text-white text-4xl px-3 uppercase flex flex-col gap-2 "
+          className="text-white text-3xl px-3 uppercase flex flex-col gap-2 "
           style={{
             fontFamily: "Raleway",
             fontWeight: "800",
