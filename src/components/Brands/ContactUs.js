@@ -66,7 +66,7 @@ const ContactUs = () => {
               />
             </div>
             <div className="flex flex-col mt-5 mb-0 text-white mx-7 lg:mx-0">
-              <p className="text-justify text-sm 2xl:text-xl text-gray-200">
+              <p className="text-justify text-sm  text-gray-200">
                 Boast provides end-to-end UGC marketing for businesses using
                 their own customers by implementing a cashback model. Brands top
                 up marketing funds, enabling us to offer cashbacks ranging from
@@ -98,20 +98,20 @@ const ContactUs = () => {
               <h4 className=" text-xl 2xl:text-3xl font-extrabold mb-2">
                 Office
               </h4>
-              <p className=" text-sm text-gray-300 2xl:text-xl">
+              <p className=" text-sm text-gray-300 ">
                 136, Kalachadpur, North Baridhara, Dhaka 1206, Bangladesh
               </p>
               <h4 className=" text-xl 2xl:text-3xl font-extrabold mt-3 mb-2">
                 Contacts
               </h4>
-              <p className=" text-sm text-gray-300 2xl:text-xl">
+              <p className=" text-sm text-gray-300 ">
                 +8801614395930 ridwan@xrougex.com
               </p>
             </div>
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center text-white font-normal 2xl:text-xl mb-1">
+        <div className="w-full flex flex-col items-center text-white font-normal text-sm mb-1">
           <p>© 2024 BOAST. All rights reserved.</p>
         </div>
       </div>

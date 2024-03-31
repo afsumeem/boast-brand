@@ -2,64 +2,32 @@
 
 .howItWorksContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: #f4f4f4;
+  /* flex-direction: column; */
+  width: 50% !important;
   overflow: hidden !important;
-}
-
-/* HowItWorks.css */
-
-.background {
-  background: floralwhite;
-}
-
-.scrollText {
-  font-size: 1.5rem;
+  background-color: #10141d;
+  /* margin-top: -200px; */
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  height: 300px !important;
 }
 
 .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.25rem;
-  height: 10rem;
-  width: 25%;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.parallax {
-  margin-right: 15%;
-}
-
-.sticky {
-  color: red;
-  margin-left: 15%;
-  background-color: #ff6d6d;
-}
-
-.blue {
-  background-color: #5b65ad;
-  color: white;
-}
-
-.purple {
-  background-color: #9d65d0;
+  background-color: #10141d;
+  width: 50% !important;
 }
 
 @media (max-width: 750px) {
-  .card {
+  /* .card {
     width: 40%;
-  }
+  } */
+}
 
-  .parallax {
-    margin-right: 1.5rem;
-  }
+.howItWorksContainer::-webkit-scrollbar {
+  display: none !important;
+}
 
-  .sticky {
-    margin-left: 1.5rem;
-  }
+/* Hide scrollbar for Firefox */
+.howItWorksContainer {
+  scrollbar-width: none !important;
 }
