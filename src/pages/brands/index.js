@@ -31,8 +31,8 @@ const BrandPage = () => {
     <div className="bg-[#10141d] pb-20">
       <BrandHero />
       <Tab goToTop={goToTop} />
-      {/* <HowItWorks /> */}
-      <HowItWorks2 />
+      <HowItWorks />
+      {/* <HowItWorks2 /> */}
       <Dashboard />
       <div className="calc-section pt-28 pb-16">
         <Calculator />
