@@ -12,7 +12,7 @@ const Dashboard = () => {
     <div className=" text-white mx-2 lg:mx-24 grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
       <div
         data-aos="fade-right"
-        className=" text-white px-14 py-16 bg-[#0d1118] dashboard1"
+        className=" text-white px-8 py-8 bg-[#0d1118] dashboard1"
         style={{ borderTopLeftRadius: "60px" }}
       >
         <h2
@@ -28,7 +28,7 @@ const Dashboard = () => {
       </div>
       <div
         data-aos="flip-left"
-        className="bg-[#0d1118] border-2 text-white px-10 py-20 dashboard2"
+        className="bg-[#0d1118] border-2 text-white px-8 py-8 dashboard2"
       >
         <h2
           className="text-3xl md:text-4xl mb-5 text-[#FFF6A5]"
@@ -43,7 +43,7 @@ const Dashboard = () => {
       </div>
       <div
         data-aos="fade-left"
-        className="bg-[#0d1118] text-white   px-10 py-20 rounded-br-[60px] dashboard3"
+        className="bg-[#0d1118] text-white px-8 py-8 rounded-br-[60px] dashboard3"
       >
         <h2
           className="text-3xl md:text-4xl mb-5 text-[#FFF6A5]"
