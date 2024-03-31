@@ -3,10 +3,10 @@ import Marquee from "react-fast-marquee";
 
 const TopBrands = () => {
   return (
-    <div className="py-7 flex px-7 z-0">
+    <div className="py-7 flex flex-col md:flex-row px-0 md:px-7 z-0">
       <div>
         <h2
-          className="text-white text-3xl px-3 uppercase flex flex-col gap-2 "
+          className="text-white text-2xl md:text-3xl px-0 md:px-3 uppercase flex flex-row md:flex-col gap-2 justify-center md:justify-start"
           style={{
             fontFamily: "Raleway",
             fontWeight: "800",
@@ -14,10 +14,10 @@ const TopBrands = () => {
           }}
         >
           <span>Brands</span>
-          <span>who are</span> <span>with</span> <span>us</span>
+          <span>who</span> <span>are</span> <span>with</span> <span>us</span>
         </h2>
       </div>
-      <div>
+      <div className="z-0">
         <Marquee autoFill="true">
           <img
             className=" mr-10"

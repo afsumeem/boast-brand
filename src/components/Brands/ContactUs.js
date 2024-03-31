@@ -19,13 +19,13 @@ const ContactUs = () => {
 
   const handleClose = () => {
     onClose();
-    resetFormData();
+    // resetFormData();
   };
   return (
     <>
       <div className="h-[600px] flex flex-col items-center justify-center">
         <h2
-          className="text-5xl text-white text-center"
+          className="text-3xl md:text-5xl text-white text-center"
           style={{
             fontFamily: "Raleway",
             fontWeight: "800",
@@ -107,7 +107,7 @@ const ContactUs = () => {
         backdrop="blur"
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        className=" contact-us-form py-2  mt-8 overflow-x-hidden"
+        className=" contact-us-form py-2  mt-8 overflow-y-scroll"
       >
         <ModalContent>
           {(onClose) => (
@@ -137,31 +137,31 @@ const ContactUs = () => {
                     // value={formData.name}
                     // onChange={handleInputChange}
                   />
+
+                  <label
+                    htmlFor="brandname"
+                    className="text-gray-200 text-sm ml-1"
+                    style={{
+                      fontFamily: "Raleway",
+                      fontWeight: "400",
+                    }}
+                  >
+                    Brand Name
+                  </label>
+                  <input
+                    className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200 mb-2"
+                    style={{
+                      fontFamily: "Raleway",
+                      fontWeight: "400",
+                    }}
+                    type="text"
+                    label="Brand Name"
+                    name="brandname"
+                    // value={formData.instagramId}
+                    // onChange={handleInputChange}
+                  />
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
-                    <div>
-                      <label
-                        htmlFor="brandname"
-                        className="text-gray-200 text-sm ml-1"
-                        style={{
-                          fontFamily: "Raleway",
-                          fontWeight: "400",
-                        }}
-                      >
-                        Brand Name
-                      </label>
-                      <input
-                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
-                        style={{
-                          fontFamily: "Raleway",
-                          fontWeight: "400",
-                        }}
-                        type="text"
-                        label="Brand Name"
-                        name="brandname"
-                        // value={formData.instagramId}
-                        // onChange={handleInputChange}
-                      />
-                    </div>
                     <div>
                       <label
                         style={{
@@ -173,7 +173,6 @@ const ContactUs = () => {
                       >
                         Email
                       </label>
-
                       <input
                         className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
                         style={{
@@ -188,33 +187,6 @@ const ContactUs = () => {
                         // onChange={handleInputChange}
                       />
                     </div>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
-                    {/* <div>
-                      <label
-                        htmlFor="instaid"
-                        style={{
-                          fontFamily: "Raleway",
-                          fontWeight: "400",
-                        }}
-                        className="text-gray-200 text-sm ml-1"
-                      >
-                        Your Instagram Link
-                      </label>
-                      <input
-                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
-                        style={{
-                          fontFamily: "Raleway",
-                          fontWeight: "400",
-                        }}
-                        type="text"
-                        label="Your Instagram Profile Link"
-                        name="instaid"
-                        id="instaid"
-                        // value={formData.instaid}
-                        // onChange={handleInputChange}
-                      />{" "}
-                    </div> */}
                     <div>
                       <label
                         style={{

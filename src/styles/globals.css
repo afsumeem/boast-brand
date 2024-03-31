@@ -223,7 +223,7 @@
 }
 
 .calculator-container {
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -290,9 +290,9 @@ input[type="range"]::-moz-range-thumb {
   overflow: auto;
   background: linear-gradient(
     315deg,
-    #14180d 3%,
+    #3f4710 3%,
     #25091e 38%,
-    #0a0333 68%,
+    #5c370d 68%,
     #160d15 98%
   );
   animation: gradient 15s ease infinite;

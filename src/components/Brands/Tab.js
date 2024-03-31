@@ -6,7 +6,7 @@ import { FaArrowUpLong } from "react-icons/fa6";
 const Tab = ({ goToTop }) => {
   return (
     <div className="w-full fixed bottom-3 z-50">
-      <div className="w-5/6 md:w-1/2 block mx-auto rounded-full border-2 border-gray-600 py-3 bg-[#10141d] tab z-50">
+      <div className="w-full md:w-1/2 block mx-auto rounded-full border-2 border-gray-600 py-3 bg-[#10141d] tab z-50">
         <div className="flex justify-around items-center mx-auto ">
           <a
             href="https://web.facebook.com/boastbrand/"

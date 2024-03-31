@@ -22,7 +22,7 @@ const Calculator = () => {
   return (
     <div className=" text-white text-center mx-2 lg:mx-24 mb-20">
       <h2
-        className="text-5xl "
+        className="text-3xl md:text-5xl "
         style={{
           fontFamily: "Raleway",
           fontWeight: "800",
@@ -41,21 +41,23 @@ const Calculator = () => {
         unlock your potential!
       </h5>
       <button
-        className="mt-10  get-calculator border-2 py-2 px-3 fixed -left-10 top-56 flex items-center gap-2 -rotate-90"
+        className={`mt-10  get-calculator border-2 py-2 px-3 fixed  top-56 flex items-center gap-2 -rotate-90 z-50 ${
+          showCalculator ? "left-[460px]" : "-left-10"
+        }`}
         onClick={toggleCalculator}
       >
         Calculator {showCalculator ? <FaArrowUpLong /> : <FaArrowDown />}
       </button>
 
       <div
-        className={`calculator-container fixed left-0 top-[360px] z-50 ${
+        className={`calculator-container fixed left-0 top-40 z-50 ${
           showCalculator ? "fade-in" : "fade-out"
         }`}
       >
-        <div className="w-[500px] calculator p-5  z-0">
-          <div className="flex justify-end">
+        <div className="w-full md:w-[500px] calculator p-2 md:p-5  z-50">
+          <div className="flex justify-end z-50">
             <button
-              className="p-1 border border-[#FC0F67] rounded-full hover:bg-[#FC0F67] text-[#FC0F67] hover:text-white duration-300"
+              className="p-1 border border-[#FC0F67] rounded-full hover:bg-[#FC0F67] text-[#FC0F67] hover:text-white duration-300 z-50 "
               onClick={toggleCalculator}
             >
               <IoClose />

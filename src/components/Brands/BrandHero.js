@@ -16,19 +16,19 @@ const BrandHero = () => {
           />
         </div>
         <div className=" mx-2 lg:mx-24 h-screen ">
-          <div className="flex h-full flex-col md:flex-row items-center justify-around ">
+          <div className="flex h-full flex-col md:flex-row items-center mt-0 lg:-mt-10 justify-around ">
             <div className="w-full lg:w-1/2">
               <img
                 src="/hero/5_n47fz6.png"
-                className="w-40 md:w-64 2xl:w-96 mx-auto block"
+                className="w-32 sm:w-40 md:w-52 lg:w-64 2xl:w-80 mx-auto block"
                 alt=""
               />
             </div>
             <div className="w-full lg:w-1/2 text-white">
-              <h2 className="text-3xl md:text-5xl  mt-5 md:mt-0 mb-7 font-extrabold text-center md:text-start">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mt-5 md:mt-0 mb-7 font-extrabold text-center md:text-start">
                 Boost Your Business: Your Path to Profitable Partnerships
               </h2>
-              <p className="font-light text-center md:text-start 2xl:text-xl">
+              <p className="font-light text-center md:text-start text:base lg:text-xl 2xl:text-xl mb-5 md:mb-0">
                 Boast powers the entire marketing lifecycle, unlocking your team
                 to create content with speed, launch experiments with
                 confidence, and deliver experiences of the highest quality.

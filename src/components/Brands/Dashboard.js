@@ -8,7 +8,7 @@ const Dashboard = () => {
         style={{ borderTopLeftRadius: "60px" }}
       >
         <h2
-          className=" text-4xl mb-5 text-[#FFF6A5]"
+          className="text-3xl md:text-4xl mb-5 text-[#FFF6A5]"
           style={{
             fontFamily: "Raleway",
             fontWeight: "800",
@@ -20,7 +20,7 @@ const Dashboard = () => {
       </div>
       <div className="bg-[#0d1118] border-2 text-white px-10 py-20 dashboard2">
         <h2
-          className=" text-4xl mb-5 text-[#FFF6A5]"
+          className="text-3xl md:text-4xl mb-5 text-[#FFF6A5]"
           style={{
             fontFamily: "Raleway",
             fontWeight: "800",
@@ -32,7 +32,7 @@ const Dashboard = () => {
       </div>
       <div className="bg-[#0d1118] text-white   px-10 py-20 rounded-br-[60px] dashboard3">
         <h2
-          className=" text-4xl mb-5 text-[#FFF6A5]"
+          className="text-3xl md:text-4xl mb-5 text-[#FFF6A5]"
           style={{
             fontFamily: "Raleway",
             fontWeight: "800",
