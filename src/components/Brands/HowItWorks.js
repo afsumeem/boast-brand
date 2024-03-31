@@ -17,6 +17,8 @@ const HowItWorks = () => {
     <div className="bg-[#10141d] h-[500px] mt-10 md:mt-0 mb-10 mx-2 lg:mx-24 flex flex-col md:flex-row justify-around gap-5 items-center z-0">
       <div>
         <h2
+          data-aos="fade-right"
+          data-aos-duration="500"
           className="text-center md:text-start text-2xl md:text-5xl font-extrabold text-white"
           style={{
             fontFamily: "Raleway",
@@ -26,6 +28,8 @@ const HowItWorks = () => {
           HOW IT WORKS?
         </h2>
         <p
+          data-aos="fade-right"
+          data-aos-duration="700"
           className="text-white font-thin text-base md:text-xl uppercase mt-5 text-center md:text-start"
           style={{
             fontFamily: "Raleway",
@@ -56,7 +60,7 @@ const HowItWorks = () => {
               </div>
             </div>
             <div className="w-[90%]">
-              <img src="/images/carousel/2.png" className="w-52" alt="" />
+              <img src="/images/carousel/2.png" className="w-52 ml-16" alt="" />
               <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
                 <h3
                   className="text-xl md:text-3xl text-white"
@@ -73,7 +77,7 @@ const HowItWorks = () => {
               </div>
             </div>
             <div className="w-[90%]">
-              <img src="/images/carousel/3.png" className="w-52" alt="" />
+              <img src="/images/carousel/3.png" className="w-52 ml-24" alt="" />
               <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
                 <h3
                   className="text-xl md:text-3xl text-white"
@@ -90,7 +94,7 @@ const HowItWorks = () => {
               </div>
             </div>
             <div className="w-[90%]">
-              <img src="/images/carousel/4.png" className="w-52" alt="" />
+              <img src="/images/carousel/4.png" className="w-52 ml-32" alt="" />
               <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
                 <h3
                   className="text-xl md:text-3xl text-white"

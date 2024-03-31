@@ -3,6 +3,7 @@ import Calculator from "@/components/Brands/Calculator";
 import ContactUs from "@/components/Brands/ContactUs";
 import Dashboard from "@/components/Brands/Dashboard";
 import HowItWorks from "@/components/Brands/HowItWorks";
+import HowItWorks2 from "@/components/Brands/HowItWorks2";
 import Tab from "@/components/Brands/Tab";
 import TopBrands from "@/components/Brands/TopBrands";
 import React, { useEffect, useState } from "react";
@@ -31,6 +32,7 @@ const BrandPage = () => {
       <BrandHero />
       <Tab goToTop={goToTop} />
       <HowItWorks />
+      {/* <HowItWorks2 /> */}
       <Dashboard />
       <div className="calc-section pt-28 pb-16">
         <Calculator />

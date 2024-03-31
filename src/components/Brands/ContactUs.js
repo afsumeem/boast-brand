@@ -24,15 +24,28 @@ const ContactUs = () => {
   return (
     <div className="">
       <div className="h-[600px] flex flex-col items-center justify-center  contact-us">
-        <h2
-          className="text-3xl md:text-5xl text-white text-center"
-          style={{
-            fontFamily: "Raleway",
-            fontWeight: "800",
-          }}
-        >
-          WANT YOUR BRAND AND <br /> PRODUCT FEATURED LIKE THIS?
-        </h2>
+        <div data-aos="fade-right" data-aos-duration="500">
+          <h2
+            className="text-3xl md:text-5xl text-white text-center "
+            style={{
+              fontFamily: "Raleway",
+              fontWeight: "800",
+            }}
+          >
+            WANT YOUR BRAND AND
+          </h2>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="500">
+          <h2
+            className="text-3xl md:text-5xl text-white text-center "
+            style={{
+              fontFamily: "Raleway",
+              fontWeight: "800",
+            }}
+          >
+            PRODUCT FEATURED LIKE THIS?
+          </h2>
+        </div>
 
         <button
           className="mt-10  contact-us-btn border-2 py-2 px-4 flex items-center gap-2 text-white text-xl duration-300"
@@ -42,7 +55,7 @@ const ContactUs = () => {
         </button>
       </div>
       <div className="mx-2 lg:mx-24 border-t-1 border-gray-600">
-        <div className="flex flex-col lg:flex-row pt-7 pb-2 justify-between gap-10">
+        <div className="flex flex-col lg:flex-row pt-7  justify-between gap-10">
           <div className="flex flex-col w-full lg:w-3/6 ">
             <div className="flex gap-3 mx-5 lg:mx-0">
               <Image
@@ -98,7 +111,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="w-full mb-5 flex flex-col items-center text-white font-normal 2xl:text-xl">
+        <div className="w-full flex flex-col items-center text-white font-normal 2xl:text-xl mb-1">
           <p>© 2024 BOAST. All rights reserved.</p>
         </div>
       </div>
@@ -107,7 +120,7 @@ const ContactUs = () => {
         backdrop="blur"
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        className=" contact-us-form py-2  mt-8 overflow-y-scroll"
+        className="contact-us-form pb-2 pt-10 md:pt-2   overflow-y-scroll md:overflow-hidden "
       >
         <ModalContent>
           {(onClose) => (

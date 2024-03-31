@@ -20,7 +20,7 @@ const BrandHero = () => {
             <div className="w-full lg:w-1/2">
               <img
                 src="/hero/5_n47fz6.png"
-                className="w-32 sm:w-40 md:w-52 lg:w-64 2xl:w-80 mx-auto block"
+                className="w-32 sm:w-40 md:w-52 lg:w-64 2xl:w-80 mx-auto block brand-hero-image"
                 alt=""
               />
             </div>

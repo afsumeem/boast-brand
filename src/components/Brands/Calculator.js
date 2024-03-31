@@ -21,25 +21,29 @@ const Calculator = () => {
   //
   return (
     <div className=" text-white text-center mx-2 lg:mx-24 mb-20">
-      <h2
-        className="text-3xl md:text-5xl "
-        style={{
-          fontFamily: "Raleway",
-          fontWeight: "800",
-        }}
-      >
-        EARN FIRST, PAY LATER!
-      </h2>
-      <h5
-        className="text-xl mt-6 "
-        style={{
-          fontFamily: "Raleway",
-          fontWeight: "800",
-        }}
-      >
-        With boast, seize $50 credit <br /> and embark on a 10-day trial to
-        unlock your potential!
-      </h5>
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h2
+          className="text-3xl md:text-5xl "
+          style={{
+            fontFamily: "Raleway",
+            fontWeight: "800",
+          }}
+        >
+          EARN FIRST, PAY LATER!
+        </h2>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="500">
+        <h5
+          className="text-xl mt-6 "
+          style={{
+            fontFamily: "Raleway",
+            fontWeight: "800",
+          }}
+        >
+          With boast, seize $50 credit <br /> and embark on a 10-day trial to
+          unlock your potential!
+        </h5>
+      </div>
       <button
         className={`mt-10  get-calculator border-2 py-2 px-3 fixed  top-56 flex items-center gap-2 -rotate-90 z-50 ${
           showCalculator ? "left-[460px]" : "-left-10"

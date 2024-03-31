@@ -412,3 +412,13 @@ input[type="range"]::-moz-range-thumb {
     ),
     url("/images/carousel/10.jpeg");
 }
+.brand-hero-image {
+  transition: 0.9s;
+}
+.brand-hero-image:hover {
+  translate: none;
+  rotate: none;
+  scale: 1.01;
+  transform: rotate3d(-0.734628, -0.352593, 0, 16.2972deg)
+    translate3d(-30.4333px, -2.73333px, 0px);
+}
