@@ -25,9 +25,9 @@ const ContactUs = () => {
   };
   return (
     <div className="">
-      <div className="h-[600px] flex flex-col items-center justify-center  contact-us relative mb-20">
-        <div className="opacity-40">
-          <video autoplay muted loop playsInline id="myVideo">
+      <div className="h-[600px] flex flex-col items-center justify-center  contact-us relative mb-14">
+        <div className="opacity-30">
+          <video autoplay muted loop id="myVideo" playsInline>
             <source src="/videos/video.mp4" type="video/mp4" />
           </video>
         </div>
