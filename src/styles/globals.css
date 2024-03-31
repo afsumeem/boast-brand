@@ -444,7 +444,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .benefit-content {
-  background: #10141d5e;
+  background: #10141d80;
   /* box-shadow: 0 4px 20px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
