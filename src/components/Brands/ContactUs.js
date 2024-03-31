@@ -95,15 +95,11 @@ const ContactUs = () => {
           {/* 2nd section */}
           <div className="mx-7 lg:mx-0">
             <div className=" text-gray-100">
-              <h4 className=" text-xl 2xl:text-3xl font-extrabold mb-2">
-                Office
-              </h4>
+              <h4 className=" text-xl font-extrabold mb-2">Office</h4>
               <p className=" text-sm text-gray-300 ">
                 136, Kalachadpur, North Baridhara, Dhaka 1206, Bangladesh
               </p>
-              <h4 className=" text-xl 2xl:text-3xl font-extrabold mt-3 mb-2">
-                Contacts
-              </h4>
+              <h4 className=" text-xl font-extrabold mt-3 mb-2">Contacts</h4>
               <p className=" text-sm text-gray-300 ">
                 +8801614395930 ridwan@xrougex.com
               </p>
