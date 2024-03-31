@@ -14,7 +14,7 @@ const HowItWorks = () => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="bg-[#10141d] h-[500px] mt-10 md:mt-0 mb-10 mx-2 lg:mx-24 flex flex-col md:flex-row justify-around gap-5 items-center z-0">
+    <div className="bg-[#10141d] h-[500px] mt-10 md:mt-0 mb-10 mx-2 lg:mx-24 flex flex-col md:flex-row justify-between gap-5 items-center z-0">
       <div>
         <h2
           data-aos="fade-right"

@@ -1,3 +1,4 @@
+import Benefits from "@/components/Brands/Benefits";
 import BrandHero from "@/components/Brands/BrandHero";
 import Calculator from "@/components/Brands/Calculator";
 import ContactUs from "@/components/Brands/ContactUs";
@@ -33,7 +34,8 @@ const BrandPage = () => {
       <Tab goToTop={goToTop} />
       <HowItWorks />
       {/* <HowItWorks2 /> */}
-      <Dashboard />
+      <Benefits />
+
       <div className="calc-section pt-28 pb-16">
         <Calculator />
         <TopBrands />
@@ -41,7 +43,7 @@ const BrandPage = () => {
         <div className="wave"></div>
         <div className="wave"></div>
       </div>
-
+      <Dashboard />
       <ContactUs />
     </div>
   );

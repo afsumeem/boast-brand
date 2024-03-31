@@ -9,7 +9,7 @@ const Dashboard = () => {
     });
   }, []);
   return (
-    <div className=" text-white mx-2 lg:mx-24 grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+    <div className=" text-white mx-2 lg:mx-24 grid grid-cols-1 md:grid-cols-3 gap-4 my-20 ">
       <div
         data-aos="fade-right"
         className=" text-white px-8 py-6 bg-[#0d1118] dashboard1"

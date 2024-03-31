@@ -10,7 +10,9 @@ import {
 } from "@nextui-org/react";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+// import video from "/video/video.mp4";
 
+//
 const ContactUs = () => {
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
   const handleJoinNow = () => {
@@ -23,7 +25,13 @@ const ContactUs = () => {
   };
   return (
     <div className="">
-      <div className="h-[600px] flex flex-col items-center justify-center  contact-us">
+      <div className="h-[600px] flex flex-col items-center justify-center  contact-us relative mb-20">
+        <div className="opacity-40">
+          <video autoplay muted loop playsInline id="myVideo">
+            <source src="/videos/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+
         <div data-aos="fade-right" data-aos-duration="500">
           <h2
             className="text-3xl md:text-5xl text-white text-center "
@@ -48,7 +56,7 @@ const ContactUs = () => {
         </div>
 
         <button
-          className="mt-10  contact-us-btn border-2 py-2 px-4 flex items-center gap-2 text-white text-xl duration-300"
+          className="mt-10  contact-us-btn border-2 py-2 px-4 flex items-center gap-2 text-white text-xl duration-300 z-40"
           onClick={handleJoinNow}
         >
           Contact Us <MdArrowOutward />
