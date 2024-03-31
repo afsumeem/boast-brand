@@ -23,7 +23,7 @@ const Calculator = () => {
     <div className=" text-white text-center mx-2 lg:mx-24 mb-20">
       <div data-aos="fade-right" data-aos-duration="500">
         <h2
-          className="text-3xl md:text-5xl "
+          className="text-3xl md:text-4xl "
           style={{
             fontFamily: "Raleway",
             fontWeight: "800",

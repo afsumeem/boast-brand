@@ -27,14 +27,14 @@ const ContactUs = () => {
     <div className="">
       <div className="h-[600px] flex flex-col items-center justify-center  contact-us relative mb-14">
         <div className="opacity-30">
-          <video autoplay muted loop id="myVideo" playsInline>
+          <video autoplay="autoplay" muted loop id="myVideo" playsInline>
             <source src="/videos/video.mp4" type="video/mp4" />
           </video>
         </div>
 
         <div data-aos="fade-right" data-aos-duration="500">
           <h2
-            className="text-3xl md:text-5xl text-white text-center "
+            className="text-3xl md:text-4xl text-white text-center "
             style={{
               fontFamily: "Raleway",
               fontWeight: "800",
@@ -45,7 +45,7 @@ const ContactUs = () => {
         </div>
         <div data-aos="fade-left" data-aos-duration="500">
           <h2
-            className="text-3xl md:text-5xl text-white text-center "
+            className="text-3xl md:text-4xl text-white text-center "
             style={{
               fontFamily: "Raleway",
               fontWeight: "800",

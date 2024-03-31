@@ -19,7 +19,7 @@ const HowItWorks = () => {
         <h2
           data-aos="fade-right"
           data-aos-duration="500"
-          className="text-center md:text-start text-2xl md:text-5xl font-extrabold text-white"
+          className="text-center md:text-start text-2xl md:text-4xl font-extrabold text-white"
           style={{
             fontFamily: "Raleway",
             fontWeight: "800",
@@ -30,7 +30,7 @@ const HowItWorks = () => {
         <p
           data-aos="fade-right"
           data-aos-duration="700"
-          className="text-white font-thin text-base md:text-xl uppercase mt-5 text-center md:text-start"
+          className="text-white font-thin text-base md:text-lg uppercase mt-5 text-center md:text-start"
           style={{
             fontFamily: "Raleway",
             fontWeight: "500",
@@ -54,28 +54,10 @@ const HowItWorks = () => {
                 >
                   1. They Signup
                 </h3>
-                <p>
-                  Influential Boast users make a full-price purchase at your POS
-                </p>
+                <p>Join Boast and unlock the power of UGC marketing.</p>
               </div>
             </div>
-            <div className="w-[90%]">
-              <img src="/images/carousel/2.png" className="w-52 ml-16" alt="" />
-              <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
-                <h3
-                  className="text-xl md:text-3xl text-white"
-                  style={{
-                    fontFamily: "Raleway",
-                    fontWeight: "700",
-                  }}
-                >
-                  2. They Login
-                </h3>
-                <p>
-                  Influential Boast users make a full-price purchase at your POS
-                </p>
-              </div>
-            </div>
+
             <div className="w-[90%]">
               <img src="/images/carousel/3.png" className="w-52 ml-24" alt="" />
               <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
@@ -86,10 +68,11 @@ const HowItWorks = () => {
                     fontWeight: "700",
                   }}
                 >
-                  3. Load Credit
+                  2. Load Credit
                 </h3>
                 <p>
-                  Influential Boast users make a full-price purchase at your POS
+                  Make full-price purchases at your favorite brands and receive
+                  cashback rewards.
                 </p>
               </div>
             </div>
@@ -103,11 +86,9 @@ const HowItWorks = () => {
                     fontWeight: "700",
                   }}
                 >
-                  4. Start Campaign with a tap
+                  3. Start Campaign with a tap
                 </h3>
-                <p>
-                  Influential Boast users make a full-price purchase at your POS
-                </p>
+                <p>Start promoting brands effortlessly with just a tap.</p>
               </div>
             </div>
           </Slider>

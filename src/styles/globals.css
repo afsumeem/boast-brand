@@ -444,7 +444,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .benefit-content {
-  background: #10141d49;
+  background: #10141d5e;
   /* box-shadow: 0 4px 20px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -453,15 +453,6 @@ input[type="range"]::-moz-range-thumb {
   height: 300px;
   margin-top: 20px;
 }
-
-/* video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -100;
-} */
 
 #myVideo {
   position: absolute;

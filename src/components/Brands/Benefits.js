@@ -18,7 +18,7 @@ const Benefits = () => {
   return (
     <div className="mx-2 lg:mx-24 mb-20">
       <h2
-        className="text-center md:text-start text-2xl md:text-5xl font-extrabold text-white uppercase mb-10"
+        className="text-center md:text-start text-2xl md:text-4xl font-extrabold text-white uppercase mb-10"
         style={{
           fontFamily: "Raleway",
           fontWeight: "800",
@@ -29,7 +29,7 @@ const Benefits = () => {
       <div className="">
         <div className="slider-container ">
           <Slider {...settings}>
-            <div className="pr-10">
+            <div className="px-5">
               <div className="benefits-container relative ">
                 <div className="h-10"></div>
                 <div className="benefit-content pt-20 px-5">
@@ -50,7 +50,7 @@ const Benefits = () => {
               </div>
             </div>
             {/*  */}
-            <div className="pr-10">
+            <div className="px-5">
               <div className="benefits-container2 relative ">
                 <div className="h-10"></div>
                 <div className="benefit-content pt-20  px-5">
@@ -71,7 +71,7 @@ const Benefits = () => {
               </div>
             </div>
             {/*  */}
-            <div className="pr-10">
+            <div className="px-5">
               <div className="benefits-container3 relative ">
                 <div className="h-10"></div>
                 <div className="benefit-content pt-20  px-5">
@@ -92,7 +92,7 @@ const Benefits = () => {
               </div>
             </div>
             {/*  */}
-            <div className="pr-10">
+            <div className="px-5">
               <div className="benefits-container4 relative ">
                 <div className="h-10"></div>
                 <div className="benefit-content pt-20  px-5">
