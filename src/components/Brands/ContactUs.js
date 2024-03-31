@@ -23,7 +23,7 @@ const ContactUs = () => {
   };
   return (
     <div className="">
-      <div className="h-[600px] flex flex-col items-center justify-center relative contact-us">
+      <div className="h-[600px] flex flex-col items-center justify-center  contact-us">
         <h2
           className="text-3xl md:text-5xl text-white text-center"
           style={{
@@ -40,11 +40,6 @@ const ContactUs = () => {
         >
           Contact Us <MdArrowOutward />
         </button>
-        <div class="lines">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
       </div>
       <div className="mx-2 lg:mx-24 border-t-1 border-gray-600">
         <div className="flex flex-col lg:flex-row pt-7 pb-2 justify-between gap-10">
