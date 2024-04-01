@@ -85,7 +85,7 @@ const ContactUs = () => {
             </div>
             <div className="flex mt-2 gap-3 mx-7 lg:mx-0">
               <a
-                href="https://web.facebook.com/boastbrand/"
+                href="https://www.facebook.com/profile.php?id=61557565121422"
                 target="blank"
                 className="text-[#FC0F67] bg-black p-3 rounded-lg duration-300 hover:text-[#FAE411] cursor-pointer"
               >

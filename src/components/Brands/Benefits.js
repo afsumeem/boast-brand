@@ -39,7 +39,7 @@ const Benefits = () => {
                 </h2>
               </div>
 
-              <p className="text-white absolute bottom-5">
+              <p className="benefit-detail left-0 px-5 text-white text-center absolute bottom-5 ">
                 Boast offers a budget-friendly solution for brands to amplify
                 their marketing efforts.
               </p>
@@ -62,7 +62,7 @@ const Benefits = () => {
                   One tap <br /> campaigns
                 </h2>
               </div>
-              <p className="text-white absolute bottom-5">
+              <p className="benefit-detail left-0 px-5 text-white text-center  absolute bottom-5 benefit-detail">
                 Launch campaigns seamlessly with just a single tap, saving time
                 and effort.
               </p>
@@ -85,7 +85,7 @@ const Benefits = () => {
                   Brands only pay after a purchase is made
                 </h2>
               </div>
-              <p className="text-white absolute bottom-5">
+              <p className="benefit-detail left-0 px-5 text-white text-center absolute bottom-5">
                 Pay-per-performance model ensures brands invest in marketing
                 only when it drives actual sales.
               </p>
@@ -108,7 +108,7 @@ const Benefits = () => {
                   Brands only pay after a purchase is made
                 </h2>
               </div>
-              <p className="text-white absolute bottom-5">
+              <p className="benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
                 Utilize your existing customer base as powerful promoters,
                 enhancing brand loyalty and reach.
               </p>

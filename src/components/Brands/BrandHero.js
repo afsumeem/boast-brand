@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const BrandHero = () => {
+  const [showSecondImage, setShowSecondImage] = useState(false);
   return (
     <>
       <div className="brandHero">
@@ -16,24 +17,41 @@ const BrandHero = () => {
           />
         </div>
         <div className=" mx-2 lg:mx-24 h-screen ">
-          <div className="flex h-full flex-col md:flex-row items-center mt-10 lg:-mt-20 justify-center gap-5">
-            <div className="w-full lg:w-1/2">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 h-full mt-10 lg:-mt-20 gap-5">
+            <div
+              className=" flex justify-center items-center img-container"
+              onMouseEnter={() => setShowSecondImage(true)}
+              onMouseLeave={() => setShowSecondImage(false)}
+            >
               <img
                 src="/hero/boastC.png"
-                className="w-32 sm:w-40  ml-0 lg:ml-20 md:w-52 lg:w-80 mx-auto block brand-hero-image"
+                className={`w-32 sm:w-40 md:w-52 lg:w-80 image ${
+                  showSecondImage ? "hidden" : ""
+                }`}
+                alt=""
+              />
+              <img
+                src="/hero/boastC2.png"
+                className={`w-32 sm:w-40 md:w-52 lg:w-80 image ${
+                  showSecondImage ? "" : "hidden"
+                }`}
                 alt=""
               />
             </div>
-            <div className="w-full lg:w-1/2 text-white ml-0 lg:-ml-40">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mt-5 md:mt-0 mb-7 font-extrabold text-center md:text-start ">
-                Boost Your Business: <br /> Your Path to Profitable Partnerships
-              </h2>
-              <p className="font-light text-center md:text-start text:base lg:text-xl 2xl:text-xl mb-5 md:mb-0">
-                Boast powers the entire marketing lifecycle, unlocking your team{" "}
-                <br />
-                to create content with speed, launch experiments with <br />
-                confidence, and deliver experiences of the highest quality.
-              </p>
+
+            <div className=" text-white flex justify-start items-center">
+              <div className="ml-0 lg:-ml-24">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mt-5 md:mt-0 mb-7 font-extrabold text-center md:text-start ">
+                  Boost Your Business: <br /> Your Path to Profitable
+                  Partnerships
+                </h2>
+                <p className="font-light text-center md:text-start text:base lg:text-xl 2xl:text-xl mb-5 md:mb-0">
+                  Boast powers the entire marketing lifecycle, unlocking your
+                  team <br />
+                  to create content with speed, launch experiments with <br />
+                  confidence, and deliver experiences of the highest quality.
+                </p>
+              </div>
             </div>
           </div>
         </div>
