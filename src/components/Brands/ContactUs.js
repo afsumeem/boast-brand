@@ -23,9 +23,10 @@ const ContactUs = () => {
     onClose();
     // resetFormData();
   };
+
   return (
     <div className=" w-full">
-      <div className=" h-fit md:h-[600px] flex flex-col items-center justify-center  contact-us relative mb-14">
+      <div className=" h-[600px] flex flex-col items-center justify-center contact-us relative mb-14">
         <div className="opacity-30 contact-us-container w-full">
           <video autoplay="autoplay" muted loop id="myVideo" playsInline>
             <source src="/videos/video.mp4" type="video/mp4" />

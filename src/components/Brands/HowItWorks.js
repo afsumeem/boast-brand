@@ -40,11 +40,11 @@ const HowItWorks = () => {
         </p>
       </div>
       <div className="w-[80%] md:w-[50%] lg:w-1/2 text-white z-0 bg-[#10141d] ">
-        <div className="slider-container ">
+        <div className="slider-container w-[90%] ml:0 md:-ml-20">
           <Slider {...settings}>
-            <div className="w-[90%]">
+            <div className="w-full md:w-[90%]">
               <img src="/images/carousel/1.png" className="w-52" alt="" />
-              <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
+              <div className="border-0 rounded-2xl p-7  how-it-works-slide h-36">
                 <h3
                   className="text-xl md:text-3xl text-white"
                   style={{
@@ -60,7 +60,7 @@ const HowItWorks = () => {
 
             <div className="w-[90%]">
               <img src="/images/carousel/3.png" className="w-52 ml-24" alt="" />
-              <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
+              <div className="rounded-2xl p-7  border-0 how-it-works-slide h-36">
                 <h3
                   className="text-xl md:text-3xl text-white"
                   style={{
@@ -78,7 +78,7 @@ const HowItWorks = () => {
             </div>
             <div className="w-[90%]">
               <img src="/images/carousel/4.png" className="w-52 ml-32" alt="" />
-              <div className="border rounded-2xl  p-7 border-gray-600 border-b-0">
+              <div className=" rounded-2xl  p-7 border-0 how-it-works-slide h-36">
                 <h3
                   className="text-xl md:text-3xl text-white"
                   style={{

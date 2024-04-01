@@ -10,7 +10,7 @@ const Benefits = () => {
     });
   }, []);
   return (
-    <div className="mx-2 lg:mx-24 mb-32">
+    <div className="mx-2 lg:mx-24 mb-20">
       <h2
         data-aos="fade-right"
         data-aos-duration="500"

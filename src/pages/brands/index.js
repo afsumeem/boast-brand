@@ -36,7 +36,7 @@ const BrandPage = () => {
       {/* <HowItWorks2 /> */}
       <Benefits />
 
-      <div className="calc-section pt-28 pb-16">
+      <div className="calc-section pt-12 pb-5">
         <Calculator />
         <TopBrands />
         <div className="wave"></div>

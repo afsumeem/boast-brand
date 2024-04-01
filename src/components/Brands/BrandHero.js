@@ -16,15 +16,15 @@ const BrandHero = () => {
           />
         </div>
         <div className=" mx-2 lg:mx-24 h-screen ">
-          <div className="flex h-full flex-col md:flex-row items-center mt-10 lg:-mt-20 justify-center ">
-            <div className="w-full lg:w-1/2 ml-0 lg:-ml-20">
+          <div className="flex h-full flex-col md:flex-row items-center mt-10 lg:-mt-20 justify-center gap-5">
+            <div className="w-full lg:w-1/2">
               <img
                 src="/hero/boastC.png"
-                className="w-32 sm:w-40 mr-24 md:w-52 lg:w-80 mx-auto block brand-hero-image"
+                className="w-32 sm:w-40  ml-0 lg:ml-20 md:w-52 lg:w-80 mx-auto block brand-hero-image"
                 alt=""
               />
             </div>
-            <div className="w-full lg:w-1/2 text-white ml-0 lg:-ml-10">
+            <div className="w-full lg:w-1/2 text-white ml-0 lg:-ml-40">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mt-5 md:mt-0 mb-7 font-extrabold text-center md:text-start ">
                 Boost Your Business: <br /> Your Path to Profitable Partnerships
               </h2>

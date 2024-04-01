@@ -415,7 +415,7 @@ input[type="range"]::-moz-range-thumb {
 /* benefits */
 
 .benefits-container {
-  background-image: url("/car/1.jpg");
+  background-image: url("/car/32.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
@@ -423,21 +423,21 @@ input[type="range"]::-moz-range-thumb {
   transition: 0.5s;
 }
 .benefits-container2 {
-  background-image: url("/car/2.jpg");
+  background-image: url("/car/6.jpeg");
   background-repeat: no-repeat;
   height: 450px;
   background-size: cover;
   border-radius: 20px;
 }
 .benefits-container3 {
-  background-image: url("/car/3.jpg");
+  background-image: url("/car/7.jpeg");
   background-repeat: no-repeat;
   height: 450px;
   border-radius: 20px;
   background-size: cover;
 }
 .benefits-container4 {
-  background-image: url("/car/4.jpg");
+  background-image: url("/car/35.png");
   background-repeat: no-repeat;
   height: 450px;
   border-radius: 20px;
@@ -445,10 +445,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .benefit-content {
-  background: #10141da4;
+  background: #10141d7a;
   /* box-shadow: 0 4px 20px 0 rgba(31, 38, 135, 0.37); */
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   border-radius: 20px;
   border: 1px solid #fc0f662d;
   height: 450px;
@@ -493,4 +493,17 @@ input[type="range"]::-moz-range-thumb {
 
 .item {
   box-shadow: 0 10px 20px #151b27;
+}
+
+/*  */
+
+.how-it-works-slide {
+  background: linear-gradient(
+    110.6deg,
+    rgb(77, 49, 58) -18.3%,
+    rgb(67, 54, 74) 16.4%,
+    rgb(47, 48, 67) 68.2%,
+    rgb(27, 23, 36) 99.1%
+  );
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }

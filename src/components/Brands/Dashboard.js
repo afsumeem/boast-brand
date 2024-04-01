@@ -52,7 +52,7 @@ const Dashboard = () => {
             fontWeight: "800",
           }}
         >
-          1 tap <br /> campaign
+          Increased <br /> Traffic
         </h2>
         <p>Our app lets you start a campaign with just a tap</p>
       </div>
