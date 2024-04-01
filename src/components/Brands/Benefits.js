@@ -40,8 +40,8 @@ const Benefits = () => {
               </div>
 
               <p className="text-white absolute bottom-5">
-                Followers of your customer have similar demographics and
-                spending power
+                Boast offers a budget-friendly solution for brands to amplify
+                their marketing efforts.
               </p>
             </div>
           </div>
@@ -63,8 +63,8 @@ const Benefits = () => {
                 </h2>
               </div>
               <p className="text-white absolute bottom-5">
-                Followers of your customer have similar demographics and
-                spending power
+                Launch campaigns seamlessly with just a single tap, saving time
+                and effort.
               </p>
             </div>
           </div>
@@ -86,8 +86,8 @@ const Benefits = () => {
                 </h2>
               </div>
               <p className="text-white absolute bottom-5">
-                Followers of your customer have similar demographics and
-                spending power
+                Pay-per-performance model ensures brands invest in marketing
+                only when it drives actual sales.
               </p>
             </div>
           </div>
@@ -109,8 +109,8 @@ const Benefits = () => {
                 </h2>
               </div>
               <p className="text-white absolute bottom-5">
-                Followers of your customer have similar demographics and
-                spending power
+                Utilize your existing customer base as powerful promoters,
+                enhancing brand loyalty and reach.
               </p>
             </div>
           </div>
