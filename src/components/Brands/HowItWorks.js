@@ -9,7 +9,7 @@ const HowItWorks = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
@@ -19,7 +19,7 @@ const HowItWorks = () => {
         <h2
           data-aos="fade-right"
           data-aos-duration="500"
-          className="text-center md:text-start text-2xl md:text-4xl font-extrabold text-white"
+          className="text-center md:text-start text-2xl md:text-5xl font-extrabold text-white"
           style={{
             fontFamily: "Raleway",
             fontWeight: "800",

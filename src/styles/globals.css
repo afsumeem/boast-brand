@@ -418,40 +418,47 @@ input[type="range"]::-moz-range-thumb {
   background-image: url("/car/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 250px;
+  height: 450px;
   border-radius: 20px;
+  transition: 0.5s;
 }
 .benefits-container2 {
   background-image: url("/car/2.jpg");
   background-repeat: no-repeat;
-  height: 250px;
+  height: 450px;
   background-size: cover;
   border-radius: 20px;
 }
 .benefits-container3 {
   background-image: url("/car/3.jpg");
   background-repeat: no-repeat;
-  height: 250px;
+  height: 450px;
   border-radius: 20px;
   background-size: cover;
 }
 .benefits-container4 {
   background-image: url("/car/4.jpg");
   background-repeat: no-repeat;
-  height: 250px;
+  height: 450px;
   border-radius: 20px;
   background-size: cover;
 }
 
 .benefit-content {
-  background: #10141d80;
+  background: #10141da4;
   /* box-shadow: 0 4px 20px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 20px;
   border: 1px solid #fc0f662d;
-  height: 300px;
-  margin-top: 20px;
+  height: 450px;
+  transition: 0.3s;
+  /* margin-top: 20px; */
+}
+
+.benefit-content:hover {
+  border: 1px solid #d10852bb;
+  box-shadow: 0 5px 30px #d1085238;
 }
 
 #myVideo {
@@ -461,4 +468,29 @@ input[type="range"]::-moz-range-thumb {
   min-width: 100%;
   min-height: 100%;
   z-index: -100;
+}
+
+/*  */
+.contact-us-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100px;
+  background: linear-gradient(180deg, #10141d 28%, rgba(15, 15, 15, 0) 100%);
+}
+
+.contact-us-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+  background: linear-gradient(0deg, #10141d 28%, rgba(0, 0, 0, 0) 100%);
+}
+
+/*  */
+
+.item {
+  box-shadow: 0 10px 20px #151b27;
 }

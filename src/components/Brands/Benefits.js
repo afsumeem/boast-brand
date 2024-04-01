@@ -1,24 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Slider from "react-slick";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Benefits = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 900,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    nextArrow: null, // Hides next arrow button
-    prevArrow: null, // Hides previous arrow button
-  };
-
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+    });
+  }, []);
   return (
-    <div className="mx-2 lg:mx-24 mb-20">
+    <div className="mx-2 lg:mx-24 mb-32">
       <h2
-        className="text-center md:text-start text-2xl md:text-4xl font-extrabold text-white uppercase mb-10"
+        data-aos="fade-right"
+        data-aos-duration="500"
+        className="text-center md:text-start  text-2xl md:text-5xl font-extrabold text-white uppercase mb-10"
         style={{
           fontFamily: "Raleway",
           fontWeight: "800",
@@ -26,93 +22,98 @@ const Benefits = () => {
       >
         Why Brands love Boast
       </h2>
-      <div className="">
-        <div className="slider-container ">
-          <Slider {...settings}>
-            <div className="px-5">
-              <div className="benefits-container relative ">
-                <div className="h-10"></div>
-                <div className="benefit-content pt-20 px-5">
-                  <h2
-                    className="text-2xl  mb-5 text-white uppercase "
-                    style={{
-                      fontFamily: "Raleway",
-                      fontWeight: "700",
-                    }}
-                  >
-                    Cost effective marketing alternative
-                  </h2>
-                  <p className="text-white mb-5">
-                    Followers of your customer have similar demographics and
-                    spending power
-                  </p>
-                </div>
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div data-aos="fade-up">
+          <div className="benefits-container relative">
+            {/* <div className="h-10"></div> */}
+            <div className="benefit-content px-5">
+              <div className="flex items-center justify-center h-full">
+                <h2
+                  className="text-2xl text-center text-white uppercase "
+                  style={{
+                    fontFamily: "Raleway",
+                    fontWeight: "700",
+                  }}
+                >
+                  Cost effective marketing alternative
+                </h2>
               </div>
+
+              <p className="text-white absolute bottom-5">
+                Followers of your customer have similar demographics and
+                spending power
+              </p>
             </div>
-            {/*  */}
-            <div className="px-5">
-              <div className="benefits-container2 relative ">
-                <div className="h-10"></div>
-                <div className="benefit-content pt-20  px-5">
-                  <h2
-                    className="text-2xl  mb-5 text-white uppercase "
-                    style={{
-                      fontFamily: "Raleway",
-                      fontWeight: "700",
-                    }}
-                  >
-                    One tap <br /> campaigns
-                  </h2>
-                  <p className="text-white mb-5">
-                    Followers of your customer have similar demographics and
-                    spending power
-                  </p>
-                </div>
+          </div>
+        </div>
+        {/*  */}
+        <div data-aos="flip-left">
+          <div className="benefits-container2 relative ">
+            {/* <div className="h-10"></div> */}
+            <div className="benefit-content  px-5">
+              <div className="flex items-center justify-center h-full">
+                <h2
+                  className="text-2xl text-center   text-white uppercase "
+                  style={{
+                    fontFamily: "Raleway",
+                    fontWeight: "700",
+                  }}
+                >
+                  One tap <br /> campaigns
+                </h2>
               </div>
+              <p className="text-white absolute bottom-5">
+                Followers of your customer have similar demographics and
+                spending power
+              </p>
             </div>
-            {/*  */}
-            <div className="px-5">
-              <div className="benefits-container3 relative ">
-                <div className="h-10"></div>
-                <div className="benefit-content pt-20  px-5">
-                  <h2
-                    className="text-2xl  mb-5 text-white uppercase "
-                    style={{
-                      fontFamily: "Raleway",
-                      fontWeight: "700",
-                    }}
-                  >
-                    Brands only pay after a purchase is made
-                  </h2>
-                  <p className="text-white mb-5">
-                    Followers of your customer have similar demographics and
-                    spending power
-                  </p>
-                </div>
+          </div>
+        </div>
+        {/*  */}
+        <div data-aos="flip-right">
+          <div className="benefits-container3 relative ">
+            {/* <div className="h-10"></div> */}
+            <div className="benefit-content  px-5">
+              <div className="flex items-center justify-center h-full">
+                <h2
+                  className="text-2xl  text-center  text-white uppercase "
+                  style={{
+                    fontFamily: "Raleway",
+                    fontWeight: "700",
+                  }}
+                >
+                  Brands only pay after a purchase is made
+                </h2>
               </div>
+              <p className="text-white absolute bottom-5">
+                Followers of your customer have similar demographics and
+                spending power
+              </p>
             </div>
-            {/*  */}
-            <div className="px-5">
-              <div className="benefits-container4 relative ">
-                <div className="h-10"></div>
-                <div className="benefit-content pt-20  px-5">
-                  <h2
-                    className="text-2xl  mb-5 text-white uppercase "
-                    style={{
-                      fontFamily: "Raleway",
-                      fontWeight: "700",
-                    }}
-                  >
-                    Brands only pay after a purchase is made
-                  </h2>
-                  <p className="text-white mb-5">
-                    Followers of your customer have similar demographics and
-                    spending power
-                  </p>
-                </div>
+          </div>
+        </div>
+        {/*  */}
+        <div data-aos="fade-down">
+          <div className="benefits-container4 relative ">
+            {/* <div className="h-10"></div> */}
+            <div className="benefit-content  px-5">
+              <div className="flex items-center justify-center h-full">
+                <h2
+                  className="text-2xl text-center text-white uppercase "
+                  style={{
+                    fontFamily: "Raleway",
+                    fontWeight: "700",
+                  }}
+                >
+                  Brands only pay after a purchase is made
+                </h2>
               </div>
+              <p className="text-white absolute bottom-5">
+                Followers of your customer have similar demographics and
+                spending power
+              </p>
             </div>
-          </Slider>
+          </div>
         </div>
       </div>
     </div>
