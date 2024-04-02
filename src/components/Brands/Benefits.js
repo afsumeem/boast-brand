@@ -20,7 +20,7 @@ const Benefits = () => {
           fontWeight: "800",
         }}
       >
-        Why Brands love Boast
+        Why love us?
       </h2>
       {/*  */}
       <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">

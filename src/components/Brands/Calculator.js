@@ -29,7 +29,7 @@ const Calculator = () => {
             fontWeight: "800",
           }}
         >
-          EARN FIRST, PAY LATER!
+          Try boast for free?
         </h2>
       </div>
       <div data-aos="fade-left" data-aos-duration="500">
@@ -41,7 +41,9 @@ const Calculator = () => {
           }}
         >
           With boast, seize $50 credit <br /> and embark on a 10-day trial to
-          unlock your potential!
+          unlock your potential! <br />
+          We only provide cashback from your account after the customer has made
+          a purchase and posted a shouout.
         </h5>
       </div>
       <button

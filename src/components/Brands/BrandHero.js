@@ -42,14 +42,10 @@ const BrandHero = () => {
             <div className=" text-white flex justify-start items-center">
               <div className="ml-0 lg:-ml-24">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mt-5 md:mt-0 mb-7 font-extrabold text-center md:text-start ">
-                  Boost Your Business: <br /> Your Path to Profitable
-                  Partnerships
+                  Supercharge your Brand
                 </h2>
                 <p className="font-light text-center md:text-start text:base lg:text-xl 2xl:text-xl mb-5 md:mb-0">
-                  Boast powers the entire marketing lifecycle, unlocking your
-                  team <br />
-                  to create content with speed, launch experiments with <br />
-                  confidence, and deliver experiences of the highest quality.
+                  Using your customers and local influencers
                 </p>
               </div>
             </div>

@@ -71,8 +71,8 @@ const HowItWorks = () => {
                   2. Load Credit
                 </h3>
                 <p>
-                  Make full-price purchases at your favorite brands and receive
-                  cashback rewards.
+                  You load credit to your new boast account and connect your
+                  brands social platforms.
                 </p>
               </div>
             </div>
@@ -86,9 +86,12 @@ const HowItWorks = () => {
                     fontWeight: "700",
                   }}
                 >
-                  3. Start Campaign with a tap
+                  3. Start a 1 tap campaign.
                 </h3>
-                <p>Start promoting brands effortlessly with just a tap.</p>
+                <p>
+                  Users and influncers shopping from you will tag and post you
+                  in return for cashbacks on purchase.
+                </p>
               </div>
             </div>
           </Slider>

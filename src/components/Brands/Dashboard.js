@@ -54,7 +54,7 @@ const Dashboard = () => {
         >
           Increased <br /> Traffic
         </h2>
-        <p>Our app lets you start a campaign with just a tap</p>
+        <p>Minimum of 2x traffic within a day of campaign start.</p>
       </div>
     </div>
   );
