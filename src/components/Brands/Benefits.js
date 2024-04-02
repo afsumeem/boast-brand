@@ -104,7 +104,7 @@ const Benefits = () => {
                     fontWeight: "700",
                   }}
                 >
-                  Brands only pay after a purchase is made
+                  Brand’s own customers will be the brand promoters
                 </h2>
               </div>
               <p className="text-lg benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
