@@ -22,10 +22,10 @@ const Benefits = () => {
       >
         Why Brands love Boast
       </h2>
+      {/*  */}
       <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-        <div data-aos="fade-up">
+        <div data-aos="fade-up benefit">
           <div className="benefits-container relative">
-            {/* <div className="h-10"></div> */}
             <div className="benefit-content px-5">
               <div className="flex items-center justify-center h-full">
                 <h2
@@ -39,17 +39,17 @@ const Benefits = () => {
                 </h2>
               </div>
 
-              <p className="benefit-detail left-0 px-5 text-white text-center absolute bottom-5 ">
+              <p className="text-lg benefit-detail left-0 px-5 text-white text-center absolute bottom-5 ">
                 Boast offers a budget-friendly solution for brands to amplify
                 their marketing efforts.
               </p>
             </div>
           </div>
         </div>
+
         {/*  */}
         <div data-aos="flip-left">
           <div className="benefits-container2 relative ">
-            {/* <div className="h-10"></div> */}
             <div className="benefit-content  px-5">
               <div className="flex items-center justify-center h-full">
                 <h2
@@ -62,7 +62,7 @@ const Benefits = () => {
                   One tap <br /> campaigns
                 </h2>
               </div>
-              <p className="benefit-detail left-0 px-5 text-white text-center  absolute bottom-5 benefit-detail">
+              <p className="text-lg benefit-detail left-0 px-5 text-white text-center  absolute bottom-5 benefit-detail">
                 Launch campaigns seamlessly with just a single tap, saving time
                 and effort.
               </p>
@@ -72,7 +72,6 @@ const Benefits = () => {
         {/*  */}
         <div data-aos="flip-right">
           <div className="benefits-container3 relative ">
-            {/* <div className="h-10"></div> */}
             <div className="benefit-content  px-5">
               <div className="flex items-center justify-center h-full">
                 <h2
@@ -85,7 +84,7 @@ const Benefits = () => {
                   Brands only pay after a purchase is made
                 </h2>
               </div>
-              <p className="benefit-detail left-0 px-5 text-white text-center absolute bottom-5">
+              <p className="text-lg benefit-detail left-0 px-5 text-white text-center absolute bottom-5">
                 Pay-per-performance model ensures brands invest in marketing
                 only when it drives actual sales.
               </p>
@@ -108,7 +107,7 @@ const Benefits = () => {
                   Brands only pay after a purchase is made
                 </h2>
               </div>
-              <p className="benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
+              <p className="text-lg benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
                 Utilize your existing customer base as powerful promoters,
                 enhancing brand loyalty and reach.
               </p>

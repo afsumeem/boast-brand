@@ -8,7 +8,7 @@ const HowItWorks = () => {
     speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -40,11 +40,11 @@ const HowItWorks = () => {
         </p>
       </div>
       <div className="w-[80%] md:w-[50%] lg:w-1/2 text-white z-0 bg-[#10141d] ">
-        <div className="slider-container w-[90%] ml:0 md:-ml-20">
+        <div className="slider-container w-[90%] ml:0 md:ml-10 lg:-ml-28">
           <Slider {...settings}>
             <div className="w-full md:w-[90%]">
               <img src="/images/carousel/1.png" className="w-52" alt="" />
-              <div className="border-0 rounded-2xl p-7  how-it-works-slide h-36">
+              <div className="border-0 rounded-2xl p-7  how-it-slide1 h-36">
                 <h3
                   className="text-xl md:text-3xl text-white"
                   style={{
@@ -59,8 +59,8 @@ const HowItWorks = () => {
             </div>
 
             <div className="w-[90%]">
-              <img src="/images/carousel/3.png" className="w-52 ml-24" alt="" />
-              <div className="rounded-2xl p-7  border-0 how-it-works-slide h-36">
+              <img src="/images/carousel/2.png" className="w-52 ml-24" alt="" />
+              <div className="rounded-2xl p-7  border-0 how-it-slide2 h-36">
                 <h3
                   className="text-xl md:text-3xl text-white"
                   style={{
@@ -77,8 +77,8 @@ const HowItWorks = () => {
               </div>
             </div>
             <div className="w-[90%]">
-              <img src="/images/carousel/4.png" className="w-52 ml-32" alt="" />
-              <div className=" rounded-2xl  p-7 border-0 how-it-works-slide h-36">
+              <img src="/images/carousel/3.png" className="w-52 ml-32" alt="" />
+              <div className=" rounded-2xl  p-7 border-0 how-it-slide3 h-36">
                 <h3
                   className="text-xl md:text-3xl text-white"
                   style={{

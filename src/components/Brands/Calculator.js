@@ -68,7 +68,7 @@ const Calculator = () => {
             </button>
           </div>
           <h5 className="text-xl 2xl:text-3xl mb-2">
-            CASHBACK VS REACH CALCULATOR
+            Cashback VS Reach Calculator
           </h5>
           <div className="flex w-full gap-2 justify-center items-center ">
             <div className="range w-full">
