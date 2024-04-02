@@ -69,7 +69,7 @@ const Calculator = () => {
               <IoClose />
             </button>
           </div>
-          <h5 className="text-xl 2xl:text-3xl mb-2">
+          <h5 className="text-xl 2xl:text-2xl mb-2">
             Cashback VS Reach Calculator
           </h5>
           <div className="flex w-full gap-2 justify-center items-center ">

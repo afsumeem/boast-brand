@@ -40,8 +40,8 @@ const BrandHero = () => {
             </div>
 
             <div className=" text-white flex justify-start items-center">
-              <div className="ml-0 lg:-ml-24">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mt-5 md:mt-0 mb-7 font-extrabold text-center md:text-start ">
+              <div className="ml-0 lg:-ml-24 -mt-40">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl md:mt-0 font-extrabold text-center md:text-start ">
                   Supercharge your Brand
                 </h2>
                 <p className="font-light text-center md:text-start text:base lg:text-xl 2xl:text-xl mb-5 md:mb-0">
