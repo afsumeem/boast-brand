@@ -25,14 +25,14 @@ const BrandHero = () => {
             >
               <img
                 src="/hero/boastC.png"
-                className={`w-32 -ml-32 sm:w-40 md:w-52 lg:w-80 image ${
+                className={`w-32 -ml-40 sm:w-40 md:w-52 lg:w-80 image ${
                   showSecondImage ? "hidden" : ""
                 }`}
                 alt=""
               />
               <img
                 src="/hero/boastC2.png"
-                className={`w-32 -ml-32 sm:w-40 md:w-52 lg:w-80 image ${
+                className={`w-32 -ml-40 sm:w-40 md:w-52 lg:w-80 image ${
                   showSecondImage ? "" : "hidden"
                 }`}
                 alt=""
@@ -40,7 +40,7 @@ const BrandHero = () => {
             </div>
 
             <div className=" text-white flex justify-start items-center">
-              <div className="ml-0 lg:-ml-32 -mt-12">
+              <div className="ml-0 lg:-ml-44 -mt-12">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl md:mt-0 font-extrabold text-center md:text-start ">
                   Supercharge your Brand
                 </h2>
