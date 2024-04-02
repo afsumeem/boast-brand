@@ -23,13 +23,13 @@ const Benefits = () => {
         Why love us?
       </h2>
       {/*  */}
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3">
         <div data-aos="fade-up benefit">
-          <div className="benefits-container relative">
-            <div className="benefit-content px-5">
+          <div className="benefits-container h-[330px] relative">
+            <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
                 <h2
-                  className="text-2xl text-center text-white uppercase "
+                  className="text-xl benefit-title text-center text-white uppercase "
                   style={{
                     fontFamily: "Raleway",
                     fontWeight: "700",
@@ -49,11 +49,11 @@ const Benefits = () => {
 
         {/*  */}
         <div data-aos="flip-left">
-          <div className="benefits-container2 relative ">
-            <div className="benefit-content  px-5">
+          <div className="benefits-container2 h-[330px] relative ">
+            <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
                 <h2
-                  className="text-2xl text-center   text-white uppercase "
+                  className="text-xl text-center benefit-title  text-white uppercase "
                   style={{
                     fontFamily: "Raleway",
                     fontWeight: "700",
@@ -71,11 +71,11 @@ const Benefits = () => {
         </div>
         {/*  */}
         <div data-aos="flip-right">
-          <div className="benefits-container3 relative ">
-            <div className="benefit-content  px-5">
+          <div className="benefits-container3 h-[330px] relative ">
+            <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
                 <h2
-                  className="text-2xl  text-center  text-white uppercase "
+                  className="text-xl  text-center benefit-title text-white uppercase "
                   style={{
                     fontFamily: "Raleway",
                     fontWeight: "700",
@@ -93,12 +93,55 @@ const Benefits = () => {
         </div>
         {/*  */}
         <div data-aos="fade-down">
-          <div className="benefits-container4 relative ">
-            {/* <div className="h-10"></div> */}
-            <div className="benefit-content  px-5">
+          <div className="benefits-container4 h-[330px] relative ">
+            <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
                 <h2
-                  className="text-2xl text-center text-white uppercase "
+                  className="text-xl text-center benefit-title text-white uppercase "
+                  style={{
+                    fontFamily: "Raleway",
+                    fontWeight: "700",
+                  }}
+                >
+                  Brand’s own customers will be the brand promoters
+                </h2>
+              </div>
+              <p className="text-lg benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
+                Utilize your existing customer base as powerful promoters,
+                enhancing brand loyalty and reach.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/*  */}
+        <div data-aos="fade-down">
+          <div className="benefits-container5 h-[330px] relative ">
+            <div className="benefit-content h-[330px] px-5">
+              <div className="flex items-center justify-center h-full">
+                <h2
+                  className="text-xl text-center benefit-title text-white uppercase "
+                  style={{
+                    fontFamily: "Raleway",
+                    fontWeight: "700",
+                  }}
+                >
+                  Brand’s own customers will be the brand promoters
+                </h2>
+              </div>
+              <p className="text-lg benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
+                Utilize your existing customer base as powerful promoters,
+                enhancing brand loyalty and reach.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-down">
+          <div className="benefits-container6 h-[330px] relative ">
+            <div className="benefit-content h-[330px] px-5">
+              <div className="flex items-center justify-center h-full">
+                <h2
+                  className="text-xl text-center benefit-title text-white uppercase "
                   style={{
                     fontFamily: "Raleway",
                     fontWeight: "700",
@@ -120,25 +163,3 @@ const Benefits = () => {
 };
 
 export default Benefits;
-
-// function SampleNextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "hidden" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
-// function SamplePrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "hidden" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
