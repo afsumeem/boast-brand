@@ -25,17 +25,17 @@ const Tab = ({ goToTop }) => {
 
           <a
             href="https://www.getboast.co/"
-            className="text-[#FC0F67] bg-inherit  tab-list duration-300 hover:text-[#FAE411]"
+            className="text-[#FC0F67] bg-inherit tab-list2 duration-300 hover:text-[#FAE411]"
             target="blank"
           >
             INFLUENCERS
           </a>
-          <p className="text-[#FC0F67] bg-inherit tab-list duration-300 hover:text-[#FAE411] uppercase">
+          <p className="text-[#FC0F67] bg-inherit tab-list2 duration-300 hover:text-[#FAE411] uppercase">
             About Us
           </p>
           <button
             onClick={goToTop}
-            className="text-[#FC0F67] tab-list duration-300 hover:text-[#FAE411]"
+            className="text-[#FC0F67] tab-list2 bg-inherit duration-300 hover:text-[#FAE411] "
           >
             <FaArrowUpLong />
           </button>

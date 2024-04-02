@@ -34,7 +34,7 @@ const Calculator = () => {
       </div>
       <div data-aos="fade-left" data-aos-duration="500">
         <h5
-          className="text-xl mt-6 "
+          className="text-xl mt-6  "
           style={{
             fontFamily: "Raleway",
             fontWeight: "800",
@@ -42,8 +42,10 @@ const Calculator = () => {
         >
           With boast, seize $50 credit <br /> and embark on a 10-day trial to
           unlock your potential! <br />
-          We only provide cashback from your account after the customer has made
-          a purchase and posted a shouout.
+          <span className="italic">
+            We only provide cashback from your account after the customer has
+            made a purchase and posted a shouout.
+          </span>
         </h5>
       </div>
       <button

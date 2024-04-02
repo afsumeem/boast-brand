@@ -45,18 +45,18 @@ const ContactUs = () => {
       );
   };
   return (
-    <div className="">
+    <div className="w-full">
       <div className="relative w-full">
-        <div className=" h-[600px] flex flex-col items-center justify-center contact-us  mb-14">
+        <div className="h-[200px] md:h-[300px] lg:h-[600px] flex flex-col items-center justify-center contact-us  mb-14">
           <div className="opacity-30 contact-us-container w-full">
             <video autoplay="autoplay" muted loop id="myVideo" playsInline>
               <source src="/videos/video.mp4" type="video/mp4" />
             </video>
           </div>
 
-          <div data-aos="fade-right" data-aos-duration="500">
+          <div data-aos="fade-up" data-aos-duration="500">
             <h2
-              className="text-xl md:text-5xl text-white text-center "
+              className="text-xl md:text-3xl lg:text-5xl text-white text-center "
               style={{
                 fontFamily: "Raleway",
                 fontWeight: "800",
@@ -65,9 +65,9 @@ const ContactUs = () => {
               WANT YOUR BRAND AND
             </h2>
           </div>
-          <div data-aos="fade-left" data-aos-duration="500">
+          <div data-aos="fade-down" data-aos-duration="500">
             <h2
-              className="text-xl md:text-5xl text-white text-center "
+              className="text-xl md:text-3xl lg:text-5xl text-white text-center "
               style={{
                 fontFamily: "Raleway",
                 fontWeight: "800",
@@ -78,7 +78,7 @@ const ContactUs = () => {
           </div>
 
           <button
-            className="mt-10  contact-us-btn border-2 py-2 px-4 flex items-center gap-2 text-white text-sm md:text-xl duration-300 z-40"
+            className=" mt-0 md:mt-10  contact-us-btn border-2 py-2 px-4 flex items-center gap-2 text-white text-sm md:text-xl duration-300 z-40"
             onClick={handleJoinNow}
           >
             Contact Us <MdArrowOutward />
@@ -149,13 +149,17 @@ const ContactUs = () => {
         backdrop="blur"
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        className="contact-us-form pb-2 pt-10 md:pt-2   overflow-y-scroll md:overflow-hidden "
+        className="contact-us-form pb-0 md:pb-2 pt-2 md:pt-2   overflow-y-scroll md:overflow-hidden "
       >
         <ModalContent>
           {(onClose) => (
             <>
               <ModalBody className=" flex flex-col items-center justify-center">
-                <form className="mt-3" ref={form} onSubmit={sendEmail}>
+                <form
+                  className=" mt-10 md:mt-3"
+                  ref={form}
+                  onSubmit={sendEmail}
+                >
                   <label
                     htmlFor="name"
                     style={{
@@ -167,7 +171,7 @@ const ContactUs = () => {
                     Name
                   </label>
                   <input
-                    className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm mb-2 text-gray-200"
+                    className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm mb-1 md:mb-2 text-gray-200"
                     style={{
                       fontFamily: "Raleway",
                       fontWeight: "400",
@@ -191,7 +195,7 @@ const ContactUs = () => {
                     Brand Name
                   </label>
                   <input
-                    className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200 mb-2"
+                    className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm  text-gray-200 mb-1 md:mb-2"
                     style={{
                       fontFamily: "Raleway",
                       fontWeight: "400",
@@ -203,7 +207,7 @@ const ContactUs = () => {
                     // onChange={handleInputChange}
                   />
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-2 mb-0 md:mb-2">
                     <div>
                       <label
                         style={{
@@ -216,7 +220,7 @@ const ContactUs = () => {
                         Email
                       </label>
                       <input
-                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
+                        className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
                         style={{
                           fontFamily: "Raleway",
                           fontWeight: "400",
@@ -241,7 +245,7 @@ const ContactUs = () => {
                         Website
                       </label>
                       <input
-                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
+                        className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
                         type="text"
                         style={{
                           fontFamily: "Raleway",
@@ -266,7 +270,7 @@ const ContactUs = () => {
                     Designation
                   </label>
                   <input
-                    className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm mb-2 text-gray-200"
+                    className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm mb-0 md:mb-2 text-gray-200"
                     style={{
                       fontFamily: "Raleway",
                       fontWeight: "400",
@@ -279,7 +283,7 @@ const ContactUs = () => {
                   />
 
                   {/*  */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-2 mb-0 md:mb-2">
                     <div>
                       <label
                         style={{
@@ -292,7 +296,7 @@ const ContactUs = () => {
                         Phone Number
                       </label>
                       <input
-                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm mb-2 text-gray-200"
+                        className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm mb-0 md:mb-2 text-gray-200"
                         style={{
                           fontFamily: "Raleway",
                           fontWeight: "400",
@@ -316,7 +320,7 @@ const ContactUs = () => {
                         City
                       </label>
                       <input
-                        className="bg-inherit rounded-lg mt-1 hover:border-gray-600 border border-gray-600 py-2 w-full focus:outline-none px-3 text-sm mb-2 text-gray-200"
+                        className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm mb-0 md:mb-2 text-gray-200"
                         style={{
                           fontFamily: "Raleway",
                           fontWeight: "400",
@@ -332,7 +336,7 @@ const ContactUs = () => {
 
                   {/*  */}
 
-                  <div className=" w-full flex justify-center items-center mt-5 gap-2 pb-2">
+                  <div className=" w-full flex justify-center items-center mt-1 md:mt-5 gap-2 pb-1 md:pb-2">
                     <button
                       type="submit"
                       className="bg-black hover:bg-[#FC0F67] text-white px-6 py-2 rounded-full hover:text-black duration-300 "

@@ -5,6 +5,7 @@ import ContactUs from "@/components/Brands/ContactUs";
 import Dashboard from "@/components/Brands/Dashboard";
 import HowItWorks from "@/components/Brands/HowItWorks";
 import HowItWorks2 from "@/components/Brands/HowItWorks2";
+import MagicHappens from "@/components/Brands/MagicHappens";
 import Tab from "@/components/Brands/Tab";
 import TopBrands from "@/components/Brands/TopBrands";
 import React, { useEffect, useState } from "react";
@@ -43,6 +44,7 @@ const BrandPage = () => {
         <div className="wave"></div>
         <div className="wave"></div>
       </div>
+      <MagicHappens />
       <Dashboard />
       <ContactUs />
     </div>
