@@ -10,7 +10,8 @@ import {
 } from "@nextui-org/react";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-// import video from "/video/video.mp4";
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 
 //
 const ContactUs = () => {
@@ -24,6 +25,25 @@ const ContactUs = () => {
     // resetFormData();
   };
 
+  //
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
+        publicKey: "YOUR_PUBLIC_KEY",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div className=" w-full">
       <div className=" h-[600px] flex flex-col items-center justify-center contact-us relative mb-14">
@@ -131,7 +151,7 @@ const ContactUs = () => {
           {(onClose) => (
             <>
               <ModalBody className=" flex flex-col items-center justify-center">
-                <form className="mt-3">
+                <form className="mt-3" ref={form} onSubmit={sendEmail}>
                   <label
                     htmlFor="name"
                     style={{

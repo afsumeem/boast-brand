@@ -338,7 +338,7 @@ input[type="range"]::-moz-range-thumb {
   content: "" !important;
   width: 100%;
   height: 100%;
-  border-width: 0.8vmin 0.8vmin 0 0;
+  border-width: 0.5vmin 0.5vmin 0 0;
   border-style: solid;
   border-color: #fafafa;
   transition: 0.2s ease;
@@ -353,7 +353,7 @@ input[type="range"]::-moz-range-thumb {
   top: -100%;
   width: 100%;
   height: 100%;
-  border-width: 0 0.8vmin 0 0;
+  border-width: 0 0.5vmin 0 0;
   border-style: solid;
   border-color: #fafafa;
   transform-origin: 100% 0;
@@ -384,13 +384,13 @@ input[type="range"]::-moz-range-thumb {
   content: "" !important;
   width: 100%;
   height: 100%;
-  border-width: 0.8vmin 0.8vmin 0 0;
+  border-width: 0.5vmin 0.5vmin 0 0;
   border-style: solid;
   border-color: #fafafa;
   transition: 0.2s ease;
   display: block;
   transform-origin: 100% 0;
-  font-size: 25px !important;
+  /* font-size: 25px !important; */
   color: #fc0f67 !important;
 }
 .slick-prev::after {
@@ -400,7 +400,7 @@ input[type="range"]::-moz-range-thumb {
   top: -100%;
   width: 100%;
   height: 100%;
-  border-width: 0 0.8vmin 0 0;
+  border-width: 0 0.5vmin 0 0;
   border-style: solid;
   border-color: #fafafa;
   transform-origin: 100% 0;
@@ -602,3 +602,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /*  */
+.how-it-slide {
+  box-shadow: rgba(194, 215, 236, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+}
