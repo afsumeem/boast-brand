@@ -44,8 +44,16 @@ const BrandHero = () => {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl md:mt-0 font-extrabold text-center md:text-start ">
                   Supercharge your Brand
                 </h2>
-                <p className="font-light text-center md:text-start text:base lg:text-xl 2xl:text-xl mb-5 md:mb-0">
+                <p className="font-light text-center md:text-start text:base lg:text-2xl my-5 text-gray-400">
                   Using your customers and local influencers
+                </p>
+
+                <p className="font-thin text-center md:text-start text:base lg:text-xl 2xl:text-xl mb-5 md:mb-0">
+                  Boast provides automatching end-to-end UGC marketing for
+                  businesses using their own customers and Influencers by
+                  implementing a cashback model. We provide cashbacks from
+                  10%-100% when ever they purchase from your brand and share the
+                  purchase on social media.
                 </p>
               </div>
             </div>
