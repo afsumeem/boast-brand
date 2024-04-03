@@ -24,7 +24,7 @@ const MagicHappens = () => {
           media platforms
         </p>
       </div>
-      <div className="flex gap-4 mt-1 lg:mt-4  flex-col items-center justify-center">
+      <div className="flex gap-4  flex-col items-center justify-center">
         <img src="/images/carousel/FFF.png" alt="" className="h-28 lg:h-40" />
         <h2 className="text-xl lg:text-2xl border border-[#fc0f6663]  magic-title text-center bg-black p-3 rounded-xl -mt-[37px]">
           Earn rewards
