@@ -2,8 +2,22 @@ import React from "react";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaArrowUpLong } from "react-icons/fa6";
+import {
+  Modal,
+  ModalContent,
+  ModalBody,
+  useDisclosure,
+} from "@nextui-org/react";
 
 const Tab = ({ goToTop }) => {
+  const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
+  const handleJoinNow = () => {
+    onOpen();
+  };
+
+  const handleClose = () => {
+    onClose();
+  };
   return (
     <div className="w-full fixed bottom-3 z-50">
       <div className="w-full md:w-1/2 block mx-auto rounded-full border-2 border-gray-600 py-4 bg-[#10141d] tab z-50">
@@ -28,9 +42,12 @@ const Tab = ({ goToTop }) => {
             className="text-[#FC0F67] bg-inherit tab-list2 duration-300 hover:text-[#FAE411]"
             target="blank"
           >
-            INFLUENCERS
+            INFLUENCER
           </a>
-          <p className="text-[#FC0F67] bg-inherit tab-list2 duration-300 hover:text-[#FAE411] uppercase">
+          <p
+            onClick={handleJoinNow}
+            className="text-[#FC0F67] bg-inherit tab-list2 duration-300 hover:text-[#FAE411] uppercase cursor-pointer"
+          >
             About Us
           </p>
           <button
@@ -41,6 +58,55 @@ const Tab = ({ goToTop }) => {
           </button>
         </div>
       </div>
+
+      <Modal
+        backdrop="blur"
+        size="2xl"
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        className="contact-us-form pb-0 md:pb-2 pt-2 md:pt-2 "
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalBody className=" flex flex-col items-center justify-center p-5">
+                <h2
+                  className="text-center md:text-start text-2xl md:text-4xl font-extrabold text-white uppercase py-5"
+                  style={{
+                    fontFamily: "Raleway",
+                    fontWeight: "800",
+                  }}
+                >
+                  About us
+                </h2>
+                <p className="text-white text-justify p-5">
+                  Boast provides end-to-end UGC marketing for businesses using
+                  their own customers by implementing a cashback model. Brands
+                  top up marketing funds, enabling us to offer cashbacks ranging
+                  from 10% to 100% to our members. When customers make purchases
+                  and share on social media, they receive cashback rewards.{" "}
+                  <br />
+                  Our system calculates rewards based on follower counts,
+                  engagement and other factors. We&#39;ve designed simple apps
+                  for brands and influencers, streamlining the process.
+                  <br />
+                  <br />
+                  Consumers access cash backs through our branded
+                  Mastercard-powered prepaid card, easily tracking balances.
+                  Brands can monitor budget allocation, launch UGC campaigns,
+                  and request paid promotions directly for their app while
+                  another app shows users cashback offerings from available
+                  brands nearby. Boast simplifies and automates UGC marketing
+                  for both brands and influencers We are currently building our
+                  MVP as well as serving local Brands. <br /> <br /> We are
+                  creating and testing in Bangladesh with plans to move to US
+                  market for a global approach in winter.
+                </p>
+              </ModalBody>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </div>
   );
 };
