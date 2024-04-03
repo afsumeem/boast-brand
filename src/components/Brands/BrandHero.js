@@ -216,29 +216,6 @@ const BrandHero = () => {
                     </div>
                   </div>
                   {/*  */}
-                  <label
-                    style={{
-                      fontFamily: "Raleway",
-                      fontWeight: "400",
-                    }}
-                    htmlFor="designation"
-                    className="text-gray-200 text-sm ml-1"
-                  >
-                    Designation
-                  </label>
-                  <input
-                    className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm mb-0 md:mb-2 text-gray-200"
-                    style={{
-                      fontFamily: "Raleway",
-                      fontWeight: "400",
-                    }}
-                    required
-                    type="text"
-                    id="designation"
-                    label="Designation"
-                    name="designation"
-                    // value={designation}
-                  />
 
                   {/*  */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-2 mb-0 md:mb-2">
