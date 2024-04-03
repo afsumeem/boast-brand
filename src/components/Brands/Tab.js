@@ -94,12 +94,11 @@ const Tab = ({ goToTop }) => {
                   Brands can monitor budget allocation, launch UGC campaigns,
                   and request paid promotions directly for their app while
                   another app shows users cashback offerings from available
-                  brands nearby. <br /> <br />
-                  Boast simplifies and automates UGC marketing for both brands
-                  and influencers We are currently building our MVP as well as
-                  serving local Brands. We are creating and testing in
-                  Bangladesh with plans to move to US market for a global
-                  approach in winter.
+                  brands nearby. Boast simplifies and automates UGC marketing
+                  for both brands and influencers. <br /> <br /> We are
+                  currently building our MVP as well as serving local Brands.{" "}
+                  <br /> <br /> We are creating and testing in Bangladesh with
+                  plans to move to US market for a global approach in winter.
                 </p>
               </ModalBody>
             </>
