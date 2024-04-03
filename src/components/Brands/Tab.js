@@ -61,7 +61,7 @@ const Tab = ({ goToTop }) => {
 
       <Modal
         backdrop="blur"
-        size="2xl"
+        size="3xl"
         isOpen={isOpen}
         onOpenChange={onOpenChange}
         className="contact-us-form pb-0 md:pb-2 pt-2 md:pt-2 "
@@ -71,7 +71,7 @@ const Tab = ({ goToTop }) => {
             <>
               <ModalBody className=" flex flex-col items-center justify-center p-5">
                 <h2
-                  className="text-center md:text-start text-2xl md:text-4xl font-extrabold text-white uppercase py-5"
+                  className="text-center md:text-start text-2xl md:text-3xl font-extrabold text-white uppercase pt-3 pb-2"
                   style={{
                     fontFamily: "Raleway",
                     fontWeight: "800",
@@ -79,28 +79,27 @@ const Tab = ({ goToTop }) => {
                 >
                   About us
                 </h2>
-                <p className="text-white text-justify p-5">
+                <p className="text-white text-justify px-3 pb-2">
                   Boast provides end-to-end UGC marketing for businesses using
                   their own customers by implementing a cashback model. Brands
                   top up marketing funds, enabling us to offer cashbacks ranging
                   from 10% to 100% to our members. When customers make purchases
-                  and share on social media, they receive cashback rewards.{" "}
-                  <br />
+                  and share on social media, they receive cashback rewards.
+                  <br /> <br />
                   Our system calculates rewards based on follower counts,
                   engagement and other factors. We&#39;ve designed simple apps
                   for brands and influencers, streamlining the process.
-                  <br />
-                  <br />
                   Consumers access cash backs through our branded
                   Mastercard-powered prepaid card, easily tracking balances.
                   Brands can monitor budget allocation, launch UGC campaigns,
                   and request paid promotions directly for their app while
                   another app shows users cashback offerings from available
-                  brands nearby. Boast simplifies and automates UGC marketing
-                  for both brands and influencers We are currently building our
-                  MVP as well as serving local Brands. <br /> <br /> We are
-                  creating and testing in Bangladesh with plans to move to US
-                  market for a global approach in winter.
+                  brands nearby. <br /> <br />
+                  Boast simplifies and automates UGC marketing for both brands
+                  and influencers We are currently building our MVP as well as
+                  serving local Brands. We are creating and testing in
+                  Bangladesh with plans to move to US market for a global
+                  approach in winter.
                 </p>
               </ModalBody>
             </>
