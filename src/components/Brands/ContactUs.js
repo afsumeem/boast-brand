@@ -10,8 +10,8 @@ import {
 } from "@nextui-org/react";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import emailjs from "@emailjs/browser";
-import React, { useRef } from "react";
+import { useForm } from "@formspree/react";
+import Swal from "sweetalert2";
 
 //
 const ContactUs = () => {
@@ -26,30 +26,22 @@ const ContactUs = () => {
   };
 
   //
-  const form = useRef();
+  const [state, handleSubmit, reset] = useForm("xjvlbeen");
+  if (state.succeeded) {
+    Swal.fire({
+      icon: "success",
+      title: "Success",
+      text: "Sent!, Your Message Sent Successfully!",
+    });
+    reset();
+  }
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-  };
   return (
     <div className="w-full">
       <div className="relative w-full">
         <div className="h-[200px] md:h-[300px] lg:h-[600px] flex flex-col items-center justify-center contact-us  mb-14">
           <div className="opacity-30 contact-us-container w-full">
-            <video autoplay="autoplay" muted loop id="myVideo" playsInline>
+            <video autoPlay="autoplay" muted loop id="myVideo" playsInline>
               <source src="/videos/video.mp4" type="video/mp4" />
             </video>
           </div>
@@ -155,11 +147,7 @@ const ContactUs = () => {
           {(onClose) => (
             <>
               <ModalBody className=" flex flex-col items-center justify-center">
-                <form
-                  className=" mt-10 md:mt-3"
-                  ref={form}
-                  onSubmit={sendEmail}
-                >
+                <form className=" mt-10 md:mt-3" onSubmit={handleSubmit}>
                   <label
                     htmlFor="name"
                     style={{
@@ -340,6 +328,7 @@ const ContactUs = () => {
                     <button
                       type="submit"
                       className="bg-black hover:bg-[#FC0F67] text-white px-6 py-2 rounded-full hover:text-black duration-300 "
+                      disabled={state.submitting}
                     >
                       Submit
                     </button>

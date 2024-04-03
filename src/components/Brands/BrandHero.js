@@ -1,9 +1,40 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
+import {
+  Modal,
+  ModalContent,
+  ModalBody,
+  useDisclosure,
+  Button,
+  Image,
+} from "@nextui-org/react";
 import React, { useState } from "react";
+import { useForm } from "@formspree/react";
+import Swal from "sweetalert2";
 
 const BrandHero = () => {
   const [showSecondImage, setShowSecondImage] = useState(false);
+
+  const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
+  const handleJoinNow = () => {
+    onOpen();
+  };
+
+  const handleClose = () => {
+    onClose();
+    // resetFormData();
+  };
+
+  //
+  const [state, handleSubmit, reset] = useForm("xjvlbeen");
+  if (state.succeeded) {
+    Swal.fire({
+      icon: "success",
+      title: "Success",
+      text: "Sent!, Your Message Sent Successfully!",
+    });
+    reset();
+  }
+
   return (
     <>
       <div className="brandHero">
@@ -55,7 +86,10 @@ const BrandHero = () => {
                   10%-100% when ever they purchase from your brand and share the
                   purchase on social media.
                 </p>
-                <button className="my-3 start-now-btn px-5 py-2">
+                <button
+                  onClick={handleJoinNow}
+                  className="my-3 start-now-btn px-5 py-2"
+                >
                   Start Now
                 </button>
               </div>
@@ -66,6 +100,216 @@ const BrandHero = () => {
         <div className="wave"></div>
         <div className="wave"></div>
       </div>
+      <Modal
+        backdrop="blur"
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        className="contact-us-form pb-0 md:pb-2 pt-2 md:pt-2   overflow-y-scroll md:overflow-hidden "
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalBody className=" flex flex-col items-center justify-center">
+                <form className=" mt-10 md:mt-3" onSubmit={handleSubmit}>
+                  <label
+                    htmlFor="name"
+                    style={{
+                      fontFamily: "Raleway",
+                      fontWeight: "400",
+                    }}
+                    className="text-gray-200 text-sm ml-1 "
+                  >
+                    Name
+                  </label>
+                  <input
+                    className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm mb-1 md:mb-2 text-gray-200"
+                    style={{
+                      fontFamily: "Raleway",
+                      fontWeight: "400",
+                    }}
+                    id="name"
+                    type="text"
+                    label="Name"
+                    name="name"
+                    // value={formData.name}
+                    // onChange={handleInputChange}
+                  />
+
+                  <label
+                    htmlFor="brandname"
+                    className="text-gray-200 text-sm ml-1"
+                    style={{
+                      fontFamily: "Raleway",
+                      fontWeight: "400",
+                    }}
+                  >
+                    Brand Name
+                  </label>
+                  <input
+                    className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm  text-gray-200 mb-1 md:mb-2"
+                    style={{
+                      fontFamily: "Raleway",
+                      fontWeight: "400",
+                    }}
+                    type="text"
+                    label="Brand Name"
+                    name="brandname"
+                    // value={formData.instagramId}
+                    // onChange={handleInputChange}
+                  />
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-2 mb-0 md:mb-2">
+                    <div>
+                      <label
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        htmlFor="Email"
+                        className="text-gray-200 text-sm ml-1"
+                      >
+                        Email
+                      </label>
+                      <input
+                        className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        type="email"
+                        label="Email"
+                        name="email"
+                        id="email"
+                        // value={formData.otherSocialMediaId}
+                        // onChange={handleInputChange}
+                      />
+                    </div>
+                    <div>
+                      <label
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        htmlFor="website"
+                        className="text-gray-200 text-sm ml-1"
+                      >
+                        Website
+                      </label>
+                      <input
+                        className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm  text-gray-200"
+                        type="text"
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        name="website"
+                        id="website"
+                        // value={formData.website}
+                        // onChange={handleInputChange}
+                      />
+                    </div>
+                  </div>
+                  {/*  */}
+                  <label
+                    style={{
+                      fontFamily: "Raleway",
+                      fontWeight: "400",
+                    }}
+                    htmlFor="designation"
+                    className="text-gray-200 text-sm ml-1"
+                  >
+                    Designation
+                  </label>
+                  <input
+                    className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm mb-0 md:mb-2 text-gray-200"
+                    style={{
+                      fontFamily: "Raleway",
+                      fontWeight: "400",
+                    }}
+                    type="text"
+                    id="designation"
+                    label="Designation"
+                    name="designation"
+                    // value={designation}
+                  />
+
+                  {/*  */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-2 mb-0 md:mb-2">
+                    <div>
+                      <label
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        htmlFor="phone"
+                        className="text-gray-200 text-sm ml-1"
+                      >
+                        Phone Number
+                      </label>
+                      <input
+                        className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm mb-0 md:mb-2 text-gray-200"
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        type="text"
+                        id="phone"
+                        label=" Phone Number"
+                        name="phone"
+                        // value={phone}
+                      />
+                    </div>
+                    <div>
+                      <label
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        htmlFor="city"
+                        className="text-gray-200 text-sm ml-1"
+                      >
+                        City
+                      </label>
+                      <input
+                        className="bg-inherit rounded-lg mt-0 md:mt-1 hover:border-gray-600 border border-gray-600 py-1 md:py-2 w-full focus:outline-none px-3 text-sm mb-0 md:mb-2 text-gray-200"
+                        style={{
+                          fontFamily: "Raleway",
+                          fontWeight: "400",
+                        }}
+                        type="text"
+                        id="city"
+                        label="City"
+                        name="city"
+                        // value={city}
+                      />
+                    </div>
+                  </div>
+
+                  {/*  */}
+
+                  <div className=" w-full flex justify-center items-center mt-1 md:mt-5 gap-2 pb-1 md:pb-2">
+                    <button
+                      type="submit"
+                      className="bg-black hover:bg-[#FC0F67] text-white px-6 py-2 rounded-full hover:text-black duration-300 "
+                      disabled={state.submitting}
+                    >
+                      Submit
+                    </button>
+                    <Button
+                      // color="danger"
+                      variant="light"
+                      onClick={handleClose}
+                      className="rounded-full border border-black text-white"
+                    >
+                      Cancel
+                    </Button>
+                  </div>
+                </form>
+              </ModalBody>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </>
   );
 };
