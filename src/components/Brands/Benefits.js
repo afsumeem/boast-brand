@@ -24,11 +24,7 @@ const Benefits = () => {
       </h2>
       {/*  */}
       <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3">
-        <div
-          data-aos="fade-up "
-          className="benefit"
-          data-aos-anchor-placement="center-center"
-        >
+        <div data-aos="fade-up ">
           <div className="benefits-container h-[330px] relative">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -52,11 +48,7 @@ const Benefits = () => {
         </div>
 
         {/*  */}
-        <div
-          data-aos="flip-left"
-          className="benefit"
-          data-aos-anchor-placement="center-center"
-        >
+        <div data-aos="flip-left">
           <div className="benefits-container2 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -78,11 +70,7 @@ const Benefits = () => {
           </div>
         </div>
         {/*  */}
-        <div
-          data-aos="flip-right"
-          className="benefit"
-          data-aos-anchor-placement="center-center"
-        >
+        <div data-aos="flip-right">
           <div className="benefits-container3 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -104,11 +92,7 @@ const Benefits = () => {
           </div>
         </div>
         {/*  */}
-        <div
-          data-aos="fade-right"
-          className="benefit"
-          data-aos-anchor-placement="center-center"
-        >
+        <div data-aos="fade-right">
           <div className="benefits-container4 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -122,7 +106,7 @@ const Benefits = () => {
                   Payment upon Purchase
                 </h2>
               </div>
-              <p className="text-lg benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
+              <p className="text-lg benefit-detail left-0 px-5 text-white absolute top-[25%] text-center ">
                 Adopt a pay-per-performance approach, ensuring brands only
                 invest in marketing upon generating actual sales.
               </p>
@@ -131,11 +115,7 @@ const Benefits = () => {
         </div>
 
         {/*  */}
-        <div
-          data-aos="fade-left"
-          className="benefit"
-          data-aos-anchor-placement="center-center"
-        >
+        <div data-aos="fade-left">
           <div className="benefits-container5 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -155,11 +135,7 @@ const Benefits = () => {
             </div>
           </div>
         </div>
-        <div
-          data-aos="fade-down"
-          className="benefit"
-          data-aos-anchor-placement="center-center"
-        >
+        <div data-aos="fade-down">
           <div className="benefits-container6 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">

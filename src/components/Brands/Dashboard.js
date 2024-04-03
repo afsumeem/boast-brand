@@ -12,7 +12,6 @@ const Dashboard = () => {
     <div className=" text-white mx-2 lg:mx-24 grid grid-cols-1 md:grid-cols-3 gap-4 mt-20 mb-14 h-fit">
       <div
         data-aos="fade-up"
-        data-aos-anchor-placement="center-center"
         className=" text-white px-8 py-6 bg-[#0d1118] dashboard1"
         style={{ borderTopLeftRadius: "60px" }}
       >
@@ -29,7 +28,6 @@ const Dashboard = () => {
       </div>
       <div
         data-aos="flip-left"
-        data-aos-anchor-placement="center-center"
         className="bg-[#0d1118] border-2 text-white px-8 py-6 dashboard2"
       >
         <h2
@@ -45,7 +43,6 @@ const Dashboard = () => {
       </div>
       <div
         data-aos="fade-down"
-        data-aos-anchor-placement="center-center"
         className="bg-[#0d1118] text-white px-8 py-6 rounded-br-[60px] dashboard3"
       >
         <h2
