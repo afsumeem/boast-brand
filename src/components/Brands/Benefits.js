@@ -24,7 +24,11 @@ const Benefits = () => {
       </h2>
       {/*  */}
       <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3">
-        <div data-aos="fade-up benefit">
+        <div
+          data-aos="fade-up "
+          className="benefit"
+          data-aos-anchor-placement="center-center"
+        >
           <div className="benefits-container h-[330px] relative">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -48,7 +52,11 @@ const Benefits = () => {
         </div>
 
         {/*  */}
-        <div data-aos="flip-left">
+        <div
+          data-aos="flip-left"
+          className="benefit"
+          data-aos-anchor-placement="center-center"
+        >
           <div className="benefits-container2 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -70,7 +78,11 @@ const Benefits = () => {
           </div>
         </div>
         {/*  */}
-        <div data-aos="flip-right">
+        <div
+          data-aos="flip-right"
+          className="benefit"
+          data-aos-anchor-placement="center-center"
+        >
           <div className="benefits-container3 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -92,7 +104,11 @@ const Benefits = () => {
           </div>
         </div>
         {/*  */}
-        <div data-aos="fade-down">
+        <div
+          data-aos="fade-right"
+          className="benefit"
+          data-aos-anchor-placement="center-center"
+        >
           <div className="benefits-container4 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -115,7 +131,11 @@ const Benefits = () => {
         </div>
 
         {/*  */}
-        <div data-aos="fade-down">
+        <div
+          data-aos="fade-left"
+          className="benefit"
+          data-aos-anchor-placement="center-center"
+        >
           <div className="benefits-container5 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -135,7 +155,11 @@ const Benefits = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-down">
+        <div
+          data-aos="fade-down"
+          className="benefit"
+          data-aos-anchor-placement="center-center"
+        >
           <div className="benefits-container6 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">

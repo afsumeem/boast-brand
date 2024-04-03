@@ -8,8 +8,8 @@ const HowItWorks = () => {
     speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
@@ -51,7 +51,7 @@ const HowItWorks = () => {
               />
               <div className="border-0 rounded-2xl p-7  how-it-slide1 h-auto md:h-36">
                 <h3
-                  className="text-xl md:text-3xl text-white"
+                  className="text-xl mb-2 md:text-3xl text-white"
                   style={{
                     fontFamily: "Raleway",
                     fontWeight: "700",
@@ -71,7 +71,7 @@ const HowItWorks = () => {
               />
               <div className="rounded-2xl p-7  border-0 how-it-slide2 h-auto md:h-36">
                 <h3
-                  className="text-xl md:text-3xl text-white"
+                  className="text-xl mb-2 md:text-3xl text-white"
                   style={{
                     fontFamily: "Raleway",
                     fontWeight: "700",
@@ -93,7 +93,7 @@ const HowItWorks = () => {
               />
               <div className=" rounded-2xl  p-7 border-0 how-it-slide3 h-auto md:h-36">
                 <h3
-                  className="text-xl md:text-3xl text-white"
+                  className="text-xl mb-2 md:text-3xl text-white"
                   style={{
                     fontFamily: "Raleway",
                     fontWeight: "700",

@@ -494,6 +494,10 @@ input[type="range"]::-moz-range-thumb {
 /*  */
 
 /* benefits */
+.benefit {
+  overflow: hidden;
+  border-radius: 20px;
+}
 
 .benefits-container {
   background-image: url("/car/32.png");
@@ -503,12 +507,38 @@ input[type="range"]::-moz-range-thumb {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  transition: all 0.5s;
+  transition: all 0.8s;
+  overflow: hidden;
 }
 
 .benefit:hover .benefits-container,
 .benefit:focus .benefits-container {
-  transform: scale(1.2);
+  transform: scale(1.05);
+}
+
+.benefit:hover .benefits-container2,
+.benefit:focus .benefits-container2 {
+  transform: scale(1.05);
+}
+
+.benefit:hover .benefits-container3,
+.benefit:focus .benefits-container3 {
+  transform: scale(1.05);
+}
+
+.benefit:hover .benefits-container4,
+.benefit:focus .benefits-container4 {
+  transform: scale(1.05);
+}
+
+.benefit:hover .benefits-container6,
+.benefit:focus .benefits-container6 {
+  transform: scale(1.05);
+}
+
+.benefit:hover .benefits-container5,
+.benefit:focus .benefits-container5 {
+  transform: scale(1.05);
 }
 
 .benefits-container2 {
@@ -516,35 +546,42 @@ input[type="range"]::-moz-range-thumb {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
+  transition: all 0.8s;
+  overflow: hidden;
 }
 .benefits-container3 {
   background-image: url("/car/7.jpeg");
   background-repeat: no-repeat;
   border-radius: 20px;
   background-size: cover;
+  transition: all 0.8s;
+  overflow: hidden;
 }
 .benefits-container4 {
   background-image: url("/car/35.png");
   background-repeat: no-repeat;
-
   border-radius: 20px;
   background-size: cover;
+  transition: all 0.8s;
+  overflow: hidden;
 }
 
 .benefits-container5 {
   background-image: url("/car/8.jpeg");
   background-repeat: no-repeat;
-
   border-radius: 20px;
   background-size: cover;
+  transition: all 0.8s;
+  overflow: hidden;
 }
 
 .benefits-container6 {
   background-image: url("/car/9.jpeg");
   background-repeat: no-repeat;
-
   border-radius: 20px;
   background-size: cover;
+  transition: all 0.8s;
+  overflow: hidden;
 }
 
 .benefit-content {
