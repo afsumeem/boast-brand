@@ -48,7 +48,7 @@ const Benefits = () => {
         </div>
 
         {/*  2*/}
-        <div data-aos="flip-left">
+        <div data-aos="fade-down">
           <div className="benefits-container2 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -70,7 +70,7 @@ const Benefits = () => {
           </div>
         </div>
         {/* 3 */}
-        <div data-aos="flip-right">
+        <div data-aos="fade-up">
           <div className="benefits-container3 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -92,7 +92,7 @@ const Benefits = () => {
           </div>
         </div>
         {/*  4*/}
-        <div data-aos="fade-right">
+        <div data-aos="fade-down">
           <div className="benefits-container4 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">
@@ -115,7 +115,7 @@ const Benefits = () => {
         </div>
 
         {/*  5*/}
-        <div data-aos="fade-left">
+        <div data-aos="fade-up">
           <div className="benefits-container5 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
               <div className="flex items-center justify-center h-full">

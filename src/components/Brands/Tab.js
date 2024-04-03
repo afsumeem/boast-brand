@@ -69,7 +69,7 @@ const Tab = ({ goToTop }) => {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalBody className=" flex flex-col items-center justify-center p-5">
+              <ModalBody className=" flex flex-col items-center justify-center p-0 md:p-5">
                 <h2
                   className="text-center md:text-start text-2xl md:text-3xl font-extrabold text-white uppercase pt-3 pb-2"
                   style={{
@@ -79,13 +79,13 @@ const Tab = ({ goToTop }) => {
                 >
                   About us
                 </h2>
-                <p className="text-white text-justify px-3 pb-2">
+                <p className="text-white text-justify px-1 md:px-3 pb-2 text-xs md:text-base">
                   Boast provides end-to-end UGC marketing for businesses using
                   their own customers by implementing a cashback model. Brands
                   top up marketing funds, enabling us to offer cashbacks ranging
                   from 10% to 100% to our members. When customers make purchases
                   and share on social media, they receive cashback rewards.
-                  <br /> <br />
+                  <br /> <br className="hidden md:block" />
                   Our system calculates rewards based on follower counts,
                   engagement and other factors. We&#39;ve designed simple apps
                   for brands and influencers, streamlining the process.
@@ -95,10 +95,12 @@ const Tab = ({ goToTop }) => {
                   and request paid promotions directly for their app while
                   another app shows users cashback offerings from available
                   brands nearby. Boast simplifies and automates UGC marketing
-                  for both brands and influencers. <br /> <br /> We are
-                  currently building our MVP as well as serving local Brands.{" "}
-                  <br /> <br /> We are creating and testing in Bangladesh with
-                  plans to move to US market for a global approach in winter.
+                  for both brands and influencers. <br />{" "}
+                  <br className="hidden md:block" /> We are currently building
+                  our MVP as well as serving local Brands. <br />{" "}
+                  <br className="hidden md:block" /> We are creating and testing
+                  in Bangladesh with plans to move to US market for a global
+                  approach in winter.
                 </p>
               </ModalBody>
             </>
