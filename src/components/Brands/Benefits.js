@@ -39,7 +39,7 @@ const Benefits = () => {
                 </h2>
               </div>
 
-              <p className="text-lg benefit-detail left-0 px-5 text-white text-center absolute bottom-5 ">
+              <p className="text-lg benefit-detail left-0 px-5 text-white text-center absolute top-[20%] ">
                 Boast offers a budget-friendly solution for brands to amplify
                 their marketing efforts.
               </p>
@@ -62,7 +62,7 @@ const Benefits = () => {
                   One tap <br /> campaigns
                 </h2>
               </div>
-              <p className="text-lg benefit-detail left-0 px-5 text-white text-center  absolute bottom-5 benefit-detail">
+              <p className="text-lg benefit-detail left-0 px-5 text-white text-center  absolute top-[30%] benefit-detail">
                 Launch campaigns seamlessly with just a single tap, saving time
                 and effort.
               </p>
@@ -84,7 +84,7 @@ const Benefits = () => {
                   Brands only pay after a purchase is made
                 </h2>
               </div>
-              <p className="text-lg benefit-detail left-0 px-5 text-white text-center absolute bottom-5">
+              <p className="text-lg benefit-detail left-0 px-5 text-white text-center absolute top-[20%]">
                 Pay-per-performance model ensures brands invest in marketing
                 only when it drives actual sales.
               </p>
@@ -129,7 +129,7 @@ const Benefits = () => {
                   No Integration Needed
                 </h2>
               </div>
-              <p className="text-lg benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
+              <p className="text-lg benefit-detail left-0 px-5 text-white absolute top-[40%] text-center ">
                 Simply say yes and begin your journey hassle-free.
               </p>
             </div>
@@ -149,7 +149,7 @@ const Benefits = () => {
                   Infinitely Scalable Marketing
                 </h2>
               </div>
-              <p className="text-lg benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
+              <p className="text-lg benefit-detail left-0 px-5 text-white absolute top-[30%] text-center ">
                 Achieve limitless growth potential with marketing that expands
                 in tandem with your success.
               </p>

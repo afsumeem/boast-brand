@@ -90,7 +90,7 @@ const BrandHero = () => {
                 </p>
                 <button
                   onClick={handleJoinNow}
-                  className="my-5 start-now-btn px-5 py-2"
+                  className="mt-10 mb-4 start-now-btn px-5 py-2"
                 >
                   Start Now
                 </button>
@@ -129,6 +129,7 @@ const BrandHero = () => {
                       fontFamily: "Raleway",
                       fontWeight: "400",
                     }}
+                    required
                     id="name"
                     type="text"
                     label="Name"
@@ -153,6 +154,7 @@ const BrandHero = () => {
                       fontFamily: "Raleway",
                       fontWeight: "400",
                     }}
+                    required
                     type="text"
                     label="Brand Name"
                     name="brandname"
@@ -178,6 +180,7 @@ const BrandHero = () => {
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
+                        required
                         type="email"
                         label="Email"
                         name="email"
@@ -204,6 +207,7 @@ const BrandHero = () => {
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
+                        required
                         name="website"
                         id="website"
                         // value={formData.website}
@@ -228,6 +232,7 @@ const BrandHero = () => {
                       fontFamily: "Raleway",
                       fontWeight: "400",
                     }}
+                    required
                     type="text"
                     id="designation"
                     label="Designation"
@@ -254,6 +259,7 @@ const BrandHero = () => {
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
+                        required
                         type="text"
                         id="phone"
                         label=" Phone Number"
@@ -278,6 +284,7 @@ const BrandHero = () => {
                           fontFamily: "Raleway",
                           fontWeight: "400",
                         }}
+                        required
                         type="text"
                         id="city"
                         label="City"

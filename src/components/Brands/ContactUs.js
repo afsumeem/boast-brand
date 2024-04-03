@@ -169,8 +169,7 @@ const ContactUs = () => {
                     type="text"
                     label="Name"
                     name="name"
-                    // value={formData.name}
-                    // onChange={handleInputChange}
+                    required
                   />
 
                   <label
@@ -192,8 +191,7 @@ const ContactUs = () => {
                     type="text"
                     label="Brand Name"
                     name="brandname"
-                    // value={formData.instagramId}
-                    // onChange={handleInputChange}
+                    required
                   />
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-2 mb-0 md:mb-2">
@@ -218,8 +216,7 @@ const ContactUs = () => {
                         label="Email"
                         name="email"
                         id="email"
-                        // value={formData.otherSocialMediaId}
-                        // onChange={handleInputChange}
+                        required
                       />
                     </div>
                     <div>
@@ -242,8 +239,7 @@ const ContactUs = () => {
                         }}
                         name="website"
                         id="website"
-                        // value={formData.website}
-                        // onChange={handleInputChange}
+                        required
                       />
                     </div>
                   </div>
@@ -268,7 +264,7 @@ const ContactUs = () => {
                     id="designation"
                     label="Designation"
                     name="designation"
-                    // value={designation}
+                    required
                   />
 
                   {/*  */}
@@ -294,7 +290,7 @@ const ContactUs = () => {
                         id="phone"
                         label=" Phone Number"
                         name="phone"
-                        // value={phone}
+                        required
                       />
                     </div>
                     <div>
@@ -318,7 +314,7 @@ const ContactUs = () => {
                         id="city"
                         label="City"
                         name="city"
-                        // value={city}
+                        required
                       />
                     </div>
                   </div>
