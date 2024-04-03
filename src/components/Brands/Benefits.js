@@ -22,7 +22,7 @@ const Benefits = () => {
       >
         Why love us?
       </h2>
-      {/*  */}
+      {/* 1 */}
       <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3">
         <div data-aos="fade-up ">
           <div className="benefits-container h-[330px] relative">
@@ -47,7 +47,7 @@ const Benefits = () => {
           </div>
         </div>
 
-        {/*  */}
+        {/*  2*/}
         <div data-aos="flip-left">
           <div className="benefits-container2 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
@@ -69,7 +69,7 @@ const Benefits = () => {
             </div>
           </div>
         </div>
-        {/*  */}
+        {/* 3 */}
         <div data-aos="flip-right">
           <div className="benefits-container3 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
@@ -81,7 +81,7 @@ const Benefits = () => {
                     fontWeight: "700",
                   }}
                 >
-                  Brands only pay after a purchase is made
+                  Payment upon Purchase
                 </h2>
               </div>
               <p className="text-lg benefit-detail left-0 px-5 text-white text-center absolute top-[20%]">
@@ -91,7 +91,7 @@ const Benefits = () => {
             </div>
           </div>
         </div>
-        {/*  */}
+        {/*  4*/}
         <div data-aos="fade-right">
           <div className="benefits-container4 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
@@ -103,18 +103,18 @@ const Benefits = () => {
                     fontWeight: "700",
                   }}
                 >
-                  Payment upon Purchase
+                  Brand’s Own Customers Will Be the Brand Promoters
                 </h2>
               </div>
               <p className="text-lg benefit-detail left-0 px-5 text-white absolute top-[25%] text-center ">
-                Adopt a pay-per-performance approach, ensuring brands only
-                invest in marketing upon generating actual sales.
+                Utilize your existing customer base as powerful promoters,
+                enhancing brand loyalty and reach.
               </p>
             </div>
           </div>
         </div>
 
-        {/*  */}
+        {/*  5*/}
         <div data-aos="fade-left">
           <div className="benefits-container5 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">
@@ -135,6 +135,7 @@ const Benefits = () => {
             </div>
           </div>
         </div>
+        {/* 6 */}
         <div data-aos="fade-down">
           <div className="benefits-container6 h-[330px] relative ">
             <div className="benefit-content h-[330px] px-5">

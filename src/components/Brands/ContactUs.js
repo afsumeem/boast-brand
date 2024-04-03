@@ -66,7 +66,7 @@ const ContactUs = () => {
                 fontWeight: "800",
               }}
             >
-              PRODUCT FEATURED LIKE THIS?
+              PRODUCT/SERVICE FEATURED LIKE THIS?
             </h2>
           </div>
 

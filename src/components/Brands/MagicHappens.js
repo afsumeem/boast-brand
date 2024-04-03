@@ -20,7 +20,7 @@ const MagicHappens = () => {
           Share UGC
         </h2>
         <p className="text-center ">
-          they Generate authentic content promoting your brand across social
+          They Generate authentic content promoting your brand across social
           media platforms
         </p>
       </div>
