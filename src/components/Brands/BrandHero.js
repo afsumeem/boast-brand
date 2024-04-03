@@ -25,7 +25,9 @@ const BrandHero = () => {
   };
 
   //
-  const [state, handleSubmit, reset] = useForm("xjvlbeen");
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+  const [state, handleSubmit, reset] = useForm(apiKey);
+
   if (state.succeeded) {
     Swal.fire({
       icon: "success",
@@ -88,7 +90,7 @@ const BrandHero = () => {
                 </p>
                 <button
                   onClick={handleJoinNow}
-                  className="my-3 start-now-btn px-5 py-2"
+                  className="my-5 start-now-btn px-5 py-2"
                 >
                   Start Now
                 </button>

@@ -26,7 +26,8 @@ const ContactUs = () => {
   };
 
   //
-  const [state, handleSubmit, reset] = useForm("xjvlbeen");
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+  const [state, handleSubmit, reset] = useForm(apiKey);
   if (state.succeeded) {
     Swal.fire({
       icon: "success",
