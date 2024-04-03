@@ -103,12 +103,12 @@ const Benefits = () => {
                     fontWeight: "700",
                   }}
                 >
-                  Brand’s own customers will be the brand promoters
+                  Payment upon Purchase
                 </h2>
               </div>
               <p className="text-lg benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
-                Utilize your existing customer base as powerful promoters,
-                enhancing brand loyalty and reach.
+                Adopt a pay-per-performance approach, ensuring brands only
+                invest in marketing upon generating actual sales.
               </p>
             </div>
           </div>
@@ -126,12 +126,11 @@ const Benefits = () => {
                     fontWeight: "700",
                   }}
                 >
-                  Brand’s own customers will be the brand promoters
+                  No Integration Needed
                 </h2>
               </div>
               <p className="text-lg benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
-                Utilize your existing customer base as powerful promoters,
-                enhancing brand loyalty and reach.
+                Simply say yes and begin your journey hassle-free.
               </p>
             </div>
           </div>
@@ -147,12 +146,12 @@ const Benefits = () => {
                     fontWeight: "700",
                   }}
                 >
-                  Brand’s own customers will be the brand promoters
+                  Infinitely Scalable Marketing
                 </h2>
               </div>
               <p className="text-lg benefit-detail left-0 px-5 text-white absolute bottom-5 text-center ">
-                Utilize your existing customer base as powerful promoters,
-                enhancing brand loyalty and reach.
+                Achieve limitless growth potential with marketing that expands
+                in tandem with your success.
               </p>
             </div>
           </div>
