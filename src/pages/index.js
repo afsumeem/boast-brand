@@ -1,16 +1,33 @@
-import RootLayout from "@/components/Layout/RootLayout";
-import HeroSection from "@/components/UI/HeroSection";
-import HowDoesItWork from "@/components/UI/HowDoesItWork";
-import SecondSection from "@/components/UI/SecondSection";
-import ThirdSection from "@/components/UI/ThirdSection";
-import WishlistForm from "@/components/UI/WishlistForm";
-import EligibilitySection from "@/components/UI/EligibilitySection";
-import BrandSection from "@/components/UI/BrandSection";
-import AnimatedCursor from "react-animated-cursor";
-import LargestCommunity from "@/components/UI/LargestCommunity";
+import Benefits from "@/components/Brands/Benefits";
+import BrandHero from "@/components/Brands/BrandHero";
+import Calculator from "@/components/Brands/Calculator";
+import ContactUs from "@/components/Brands/ContactUs";
+import Dashboard from "@/components/Brands/Dashboard";
+import HowItWorks from "@/components/Brands/HowItWorks";
+import MagicHappens from "@/components/Brands/MagicHappens";
+import Tab from "@/components/Brands/Tab";
+import TopBrands from "@/components/Brands/TopBrands";
 import Head from "next/head";
+import { useEffect, useState } from "react";
 
 export default function HomePage() {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    });
+  }, []);
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className=" bg-slate-100">
       <Head>
@@ -32,41 +49,24 @@ export default function HomePage() {
           content="Boast: Get Cashback Rewards by Shopping | Early Access Program"
         />
       </Head>
-      <AnimatedCursor
-        innerSize={15}
-        outerSize={0}
-        color="#fff"
-        outerAlpha={0.2}
-        innerScale={2}
-        outerScale={0}
-        innerStyle={{ border: "2px solid black", backgroundColor: "#fd7f3e" }}
-        clickables={[
-          "a",
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          "label[for]",
-          "select",
-          "textarea",
-          "button",
-          ".link",
-        ]}
-      />
+      <div className="bg-[#10141d] pb-20">
+        <BrandHero />
+        <Tab goToTop={goToTop} />
+        <HowItWorks />
+        {/* <HowItWorks2 /> */}
+        <Benefits />
 
-      <HeroSection />
-      <SecondSection />
-      <BrandSection />
-      <ThirdSection />
-      <HowDoesItWork />
-      <LargestCommunity />
-      <EligibilitySection />
-      <WishlistForm />
+        <div className="calc-section pt-12 pb-5">
+          <Calculator />
+          <TopBrands />
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <div className="wave"></div>
+        </div>
+        <MagicHappens />
+        <Dashboard />
+        <ContactUs />
+      </div>
     </div>
   );
 }
-
-HomePage.getLayout = function getLayout(page) {
-  return <RootLayout>{page}</RootLayout>;
-};
